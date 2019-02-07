@@ -5,7 +5,7 @@ export class Nav extends Component {
    render(){
         return(
             <Row>
-                <Navbar brand='James Martineau' right>
+                <Navbar className='truncate' brand='James Martineau' right>
                     <NavItem href='https://github.com/jamesmart77'>GitHub</NavItem>
                 </Navbar>
             </Row>

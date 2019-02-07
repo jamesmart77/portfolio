@@ -1,0 +1,28 @@
+@import 'appColors';
+
+.banner-container {
+    .profile{
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50rem;
+        margin-top: -1.4rem;
+        width: 100%;
+
+        &-text {
+            border: 3px solid $primarySalmon;
+            margin: 0 auto;
+            padding: 2rem;
+
+            a {
+                color: $white;
+                transition-duration: 0.4s;
+
+                &:hover {
+                    color: $primaryTeal;
+                    transition-duration: 0.4s;
+                }
+            }
+        }
+    }
+}

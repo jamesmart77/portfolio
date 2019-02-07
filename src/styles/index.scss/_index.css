@@ -1,4 +1,25 @@
 body {
-  background-color: #fff;
+  background-color: #383838;
   font-family: 'Raleway', sans-serif;
   min-width: 360px; }
+
+.banner-container .profile {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  margin-top: -1.4rem;
+  width: 100%; }
+  .banner-container .profile-text {
+    border: 3px solid #CC2A41;
+    margin: 0 auto;
+    padding: 2rem; }
+    .banner-container .profile-text a {
+      color: #fff;
+      transition-duration: 0.4s; }
+      .banner-container .profile-text a:hover {
+        color: #64908A;
+        transition-duration: 0.4s; }
+
+nav {
+  background-color: #CC2A41 !important; }
