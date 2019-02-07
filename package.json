@@ -17,11 +17,10 @@
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/styles/_index.scss -o src/styles/index.scss",
-    "start": "react-scripts start",
-    "build": "yarn build-css && react-scripts build",
+    "start": "yarn build-css && react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "yarn install && yarn install --only=dev --no-shrinkwrap && yarn run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
