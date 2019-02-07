@@ -4,7 +4,7 @@ body {
   min-width: 360px; }
 
 .banner-container .profile {
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50rem;
@@ -19,6 +19,7 @@ body {
       transition-duration: 0.4s; }
       .banner-container .profile-text a:hover {
         color: #64908A;
+        font-size: 3.5rem;
         transition-duration: 0.4s; }
 
 nav {

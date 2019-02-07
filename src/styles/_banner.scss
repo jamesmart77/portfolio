@@ -2,7 +2,7 @@
 
 .banner-container {
     .profile{
-        background-position: center top;
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 50rem;
@@ -20,6 +20,7 @@
 
                 &:hover {
                     color: $primaryTeal;
+                    font-size: 3.5rem;
                     transition-duration: 0.4s;
                 }
             }
