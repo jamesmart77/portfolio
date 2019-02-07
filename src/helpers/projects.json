@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "title": "Sched-Aroo",
+            "description": "Scheduling application for recurring events and volunteer coordination with a MVC design.",
+            "techStack": [
+                "Node", "Express", "Postgres", "React", "Sequelize", "Materialize", "SCSS"
+            ],
+            "appLink": "https://sched-aroo.herokuapp.com",
+            "repoLink": "https://github.com/jamesmart77/scheduling_app"
+        },
+        {
+            "title": "Sched-Aroo",
+            "description": "Scheduling application for recurring events and volunteer coordination with a MVC design.",
+            "techStack": [
+                "Node", "Express", "Postgres", "React", "Sequelize", "Materialize", "SCSS"
+            ],
+            "appLink": "https://sched-aroo.herokuapp.com",
+            "repoLink": "https://github.com/jamesmart77/scheduling_app"
+        },
+        {
+            "title": "Sched-Aroo",
+            "description": "Scheduling application for recurring events and volunteer coordination with a MVC design.",
+            "techStack": [
+                "Node", "Express", "Postgres", "React", "Sequelize", "Materialize", "SCSS"
+            ],
+            "appLink": "https://sched-aroo.herokuapp.com",
+            "repoLink": "https://github.com/jamesmart77/scheduling_app"
+        },
+        {
+            "title": "Sched-Aroo",
+            "description": "Scheduling application for recurring events and volunteer coordination with a MVC design.",
+            "techStack": [
+                "Node", "Express", "Postgres", "React", "Sequelize", "Materialize", "SCSS"
+            ],
+            "appLink": "https://sched-aroo.herokuapp.com",
+            "repoLink": "https://github.com/jamesmart77/scheduling_app"
+        }
+    ]
+}
