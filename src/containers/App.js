@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import { Container } from 'react-materialize';
+import Nav from '../components/Nav';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>
-            Portfolio page under construction...stay tuned folks
-          </p>
-        </header>
+        <Nav/>
+        <Container>
+        </Container>
       </div>
     );
   }
