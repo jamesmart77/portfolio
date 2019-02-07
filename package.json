@@ -4,7 +4,8 @@
   "private": true,
   "engines": {
     "npm": "6.4.0",
-    "node": "10.8.0"
+    "node": "10.8.0",
+    "yarn": "1.10.1"
   },
   "dependencies": {
     "react": "^16.8.1",
@@ -17,9 +18,10 @@
   "scripts": {
     "build-css": "node-sass-chokidar src/styles/_index.scss -o src/styles/index.scss",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn build-css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "yarn install && yarn install --only=dev --no-shrinkwrap && yarn run build"
   },
   "eslintConfig": {
     "extends": "react-app"
