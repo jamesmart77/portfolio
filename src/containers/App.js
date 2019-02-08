@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Nav from '../components/Nav';
-import Banner from '../components/Banner';
 import Portfolio from './Portfolio';
+import NoMatch from '../components/NoMatch';
 
 class App extends Component {
   render() {
     return (
-      <div className="app-container">
-        <Nav/>
-        <Banner />
-        <Portfolio />
-      </div>
+      <BrowserRouter>
+        <div className="app-container">
+          <Nav/>
+          <Switch>
+            <Route exact path='/' component={Portfolio} />
+            <Route path='/aboutme' component={Portfolio} />
+            <Route component={NoMatch} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Row } from 'react-materialize';
-import Profile from '../../src/profile.jpg';
+import { Row, Button } from 'react-materialize';
+import Profile from '../images/profile.jpg';
 
 export class Banner extends Component {
    render(){
@@ -14,7 +14,9 @@ export class Banner extends Component {
                                 rel="noopener noreferrer">Let's Connect</a>
                         </h3>
                     </div>
-                    
+                    <Row className='center'>
+                        <Button className='about-me-btn' node='a' href='/aboutme'>About Me</Button>
+                    </Row>
                 </Row>
             </div>
         )

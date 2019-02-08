@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Col, Row } from 'react-materialize';
 import ProjectCard from '../components/ProjectCard';
+import Banner from '../components/Banner';
 import * as projectData from '../helpers/projects.json';
 
 class Portfolio extends Component {
   render() {
     return (
       <div className="portfolio-container">
+          <Banner />
           <Row>
             <Col s={12} className='center'>
               <div className='portfolio-sub-text'>
