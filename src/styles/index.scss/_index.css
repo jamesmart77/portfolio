@@ -10,6 +10,8 @@
     left: 10%;
     margin-top: 1.4rem;
     position: relative;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     width: 10rem;
     z-index: 999; }
   .about-me-container .text-container {

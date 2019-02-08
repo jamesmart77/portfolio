@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Col, Row } from 'react-materialize';
-import Profile from '../images/profile.jpg';
+import Photo from '../images/family_photo.jpg';
 
 class Portfolio extends Component {
   render() {
@@ -9,7 +9,7 @@ class Portfolio extends Component {
           <Container>
             <Row>
               <Col s={12} className='center'>
-                <div className='img-container' style={ {backgroundImage: `url(${Profile})`} } />
+                <div className='img-container' style={ {backgroundImage: `url(${Photo})`} } />
                 
                 <div className='text-container'>
                   <h4 className='header-text'>About Me</h4>
