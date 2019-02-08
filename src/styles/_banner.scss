@@ -5,8 +5,10 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        border-bottom: 0.5rem solid $primaryYellow;
         height: 50rem;
         margin-top: -1.4rem;
+        transition-duration: .5s;
         width: 100%;
 
         &-text {
@@ -19,11 +21,20 @@
                 transition-duration: 0.4s;
 
                 &:hover {
-                    color: $primaryTeal;
+                    color: $primaryYellow;
                     font-size: 3.5rem;
                     transition-duration: 0.4s;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .banner-container {
+        .profile{
+            height: 30rem;
+            transition-duration: .5s;
         }
     }
 }

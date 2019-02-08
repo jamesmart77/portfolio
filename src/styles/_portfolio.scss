@@ -1,0 +1,15 @@
+@import 'appColors';
+
+.portfolio-container {
+   .portfolio-sub-text {
+       color: $subTextGrey;
+       font-size: 1.9rem;
+       font-weight: 200;
+   }
+}
+
+@media only screen and (min-width: 993px) {
+    .row .col.offset-l1 {
+        margin-left: 6.5%;
+    }
+}
