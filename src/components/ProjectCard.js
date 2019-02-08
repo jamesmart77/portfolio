@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Card, CardTitle, Col, Row, Tag } from 'react-materialize';
-import Profile from '../../src/profile.jpg';
+import Profile from '../images/profile.jpg';
 
 export class ProjectCard extends Component {
 

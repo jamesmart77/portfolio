@@ -7,8 +7,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 0.5rem solid #FFFFCC;
   height: 50rem;
   margin-top: -1.4rem;
+  transition-duration: .5s;
   width: 100%; }
   .banner-container .profile-text {
     border: 3px solid #CC2A41;
@@ -18,9 +20,41 @@ body {
       color: #fff;
       transition-duration: 0.4s; }
       .banner-container .profile-text a:hover {
-        color: #64908A;
+        color: #FFFFCC;
         font-size: 3.5rem;
         transition-duration: 0.4s; }
 
+.banner-container .about-me-btn {
+  background-color: #64908A;
+  border: 1px solid #FFFFCC;
+  border-radius: 0 0 25px 25px;
+  color: #fff;
+  font-size: 1rem;
+  height: 100% !important;
+  transition-duration: .5s; }
+  .banner-container .about-me-btn:hover {
+    background-color: #FFFFCC;
+    color: #64908A;
+    transition-duration: .5s; }
+
+@media only screen and (max-width: 993px) {
+  .banner-container .profile {
+    height: 30rem;
+    transition-duration: .5s; } }
+
 nav {
   background-color: #CC2A41 !important; }
+
+.no-match-container {
+  color: #e1e1e1; }
+  .no-match-container img {
+    height: 60vh; }
+
+.portfolio-container .portfolio-sub-text {
+  color: #e1e1e1;
+  font-size: 1.9rem;
+  font-weight: 200; }
+
+@media only screen and (min-width: 993px) {
+  .row .col.offset-l1 {
+    margin-left: 6.5%; } }

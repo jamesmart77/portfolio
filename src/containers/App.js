@@ -1,32 +1,22 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'react-materialize';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Nav from '../components/Nav';
-import Banner from '../components/Banner';
-import ProjectCard from '../components/ProjectCard';
-import * as projectData from '../helpers/projects.json';
+import Portfolio from './Portfolio';
+import NoMatch from '../components/NoMatch';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Nav/>
-        <Banner />
-
-          <Row>
-            { projectData.projects.map(project => {
-              return (
-                <ProjectCard 
-                  title={project.title}
-                  description={project.description}
-                  appLink={project.appLink}
-                  repoLink={project.repoLink}
-                  techStack={project.techStack}
-                />
-              )
-            })}
-          </Row>
-
-      </div>
+      <BrowserRouter>
+        <div className="app-container">
+          <Nav/>
+          <Switch>
+            <Route exact path='/' component={Portfolio} />
+            <Route path='/aboutme' component={Portfolio} />
+            <Route component={NoMatch} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
