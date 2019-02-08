@@ -20,6 +20,7 @@ class Portfolio extends Component {
             { projectData.projects.map(project => {
               return (
                 <ProjectCard 
+                  key={project.id}
                   title={project.title}
                   description={project.description}
                   appLink={project.appLink}

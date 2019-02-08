@@ -1,0 +1,58 @@
+@import 'appColors';
+
+.about-me-container {
+    margin-top: 5rem;
+
+    .img-container {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid $secondarySalmon;
+        border-radius: 50%;
+        height: 10rem;
+        left: 10%;
+        margin-top: 1.4rem;
+        position: relative;
+        width: 10rem;
+        z-index: 999;
+    }
+
+    .text-container {
+        background-color: lightgray;
+        border: 1px solid $primaryTeal;
+        border-radius: 40px;
+        left: 15%;
+        max-width: 75%;
+        position: relative;
+        text-align: left;
+        top: -5rem;
+        
+        .header-text {
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .body-text {
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .about-me-container{
+        
+        .img-container{
+            left: auto;
+            margin: 0 auto;
+        }
+
+        .text-container{
+            left: auto;
+            max-width: 100%;
+
+            .header-text{
+                padding-top: 5rem;
+            }
+        }
+    }
+}
