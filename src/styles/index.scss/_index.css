@@ -83,6 +83,13 @@ body {
     height: 30rem;
     transition-duration: .5s; } }
 
+.loading-container {
+  margin-top: 25%; }
+  .loading-container .loading-text {
+    color: #e1e1e1; }
+  .loading-container .image {
+    display: none; }
+
 nav {
   background-color: #CC2A41 !important; }
 
