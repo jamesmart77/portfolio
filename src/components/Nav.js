@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import { Navbar, NavItem, Row } from 'react-materialize';
 
 export class Nav extends Component {
@@ -6,9 +7,13 @@ export class Nav extends Component {
         return(
             <Row>
                 <Navbar className='truncate' brand='James Martineau' right>
-                    <NavItem href='/aboutme'>About Me</NavItem>
-                    <NavItem href='https://github.com/jamesmart77'>GitHub</NavItem>
-                    <NavItem href='https://www.linkedin.com/in/jamesrmartineau'>LinkedIn</NavItem>
+                    <div>
+                        <li>
+                            <Link to='/aboutme'>About Me</Link>
+                        </li>
+                        <NavItem href='https://github.com/jamesmart77'>GitHub</NavItem>
+                        <NavItem href='https://www.linkedin.com/in/jamesrmartineau'>LinkedIn</NavItem>
+                    </div>
                 </Navbar>
             </Row>
         )
