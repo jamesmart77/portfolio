@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Button } from 'react-materialize';
+import { Link } from 'react-router-dom';
 import Profile from '../images/profile.jpg';
 
 export class Banner extends Component {
@@ -7,7 +8,7 @@ export class Banner extends Component {
         return(
             <div className='banner-container'>
                 <Row>
-                    <div className='profile valign-wrapper' style={ {backgroundImage: `url(${Profile})`} }>
+                    <div className='profile obj-fade-in valign-wrapper' style={ {backgroundImage: `url(${Profile})`} }>
                         <h3 className='profile-text'>
                             <a href='https://www.linkedin.com/in/jamesrmartineau' 
                                 target='_blank'
@@ -15,7 +16,9 @@ export class Banner extends Component {
                         </h3>
                     </div>
                     <Row className='center'>
-                        <Button className='about-me-btn' node='a' href='/aboutme'>About Me</Button>
+                        <Button className='about-me-btn'>
+                            <Link to='/aboutme'>About Me</Link>
+                        </Button>
                     </Row>
                 </Row>
             </div>

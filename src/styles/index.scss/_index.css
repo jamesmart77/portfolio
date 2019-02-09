@@ -6,43 +6,84 @@
     background-size: cover;
     border: 1px solid #db697a;
     border-radius: 50%;
-    height: 10rem;
-    left: 10%;
-    margin-top: 1.4rem;
-    position: relative;
-    -webkit-transform: rotate(90deg);
+    height: 14rem;
+    margin: 0 auto;
     transform: rotate(90deg);
-    width: 10rem;
-    z-index: 999; }
+    -webkit-transform: rotate(90deg);
+    width: 14rem;
+    z-index: 1; }
   .about-me-container .text-container {
-    background-color: lightgray;
-    border: 1px solid #64908A;
-    border-radius: 40px;
-    left: 15%;
-    max-width: 75%;
-    position: relative;
-    text-align: left;
-    top: -5rem; }
+    color: #e1e1e1;
+    font-size: 1.15rem;
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: left; }
     .about-me-container .text-container .header-text {
-      padding-top: 2rem;
+      color: #FFFFCC;
+      padding-top: 1rem;
       text-align: center; }
     .about-me-container .text-container .body-text {
-      padding: 1rem 2rem; }
-
-@media only screen and (max-width: 485px) {
-  .about-me-container .img-container {
-    left: auto;
-    margin: 0 auto; }
-  .about-me-container .text-container {
-    left: auto;
-    max-width: 100%; }
-    .about-me-container .text-container .header-text {
-      padding-top: 5rem; } }
+      overflow: hidden;
+      padding: .1rem 2rem;
+      height: auto; }
+      .about-me-container .text-container .body-text .extra-text {
+        transform: scaleY(0); }
+        .about-me-container .text-container .body-text .extra-text-expanded {
+          -moz-transition: transform .5s ease-out;
+          -webkit-transition: transform .5s ease-out;
+          transition: transform 0.5s ease-out;
+          height: auto;
+          transform: scaleY(1);
+          transform-origin: top; }
+    .about-me-container .text-container .expand-body {
+      text-align: center;
+      color: #db697a; }
+      .about-me-container .text-container .expand-body i {
+        font-size: 3rem;
+        cursor: pointer; }
 
 body {
   background-color: #383838;
   font-family: 'Raleway', sans-serif;
   min-width: 360px; }
+
+.obj-fade-in {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .banner-container .profile {
   background-position: center center;
@@ -69,14 +110,16 @@ body {
   background-color: #64908A;
   border: 1px solid #FFFFCC;
   border-radius: 0 0 25px 25px;
-  color: #fff;
   font-size: 1rem;
   height: 100% !important;
   transition-duration: .5s; }
+  .banner-container .about-me-btn a {
+    color: #fff; }
   .banner-container .about-me-btn:hover {
     background-color: #FFFFCC;
-    color: #64908A;
     transition-duration: .5s; }
+    .banner-container .about-me-btn:hover a {
+      color: #64908A; }
 
 @media only screen and (max-width: 993px) {
   .banner-container .profile {
