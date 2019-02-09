@@ -1,0 +1,13 @@
+@import 'appColors';
+
+.loading-container {
+    margin-top: 25%;
+
+    .loading-text {
+        color: $subTextGrey;
+    }
+
+    .image {
+        display: none;
+    }
+}
