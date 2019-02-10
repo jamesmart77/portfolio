@@ -1,46 +1,67 @@
-.about-me-container {
-  margin-top: 5rem; }
-  .about-me-container .img-container {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid #db697a;
-    border-radius: 50%;
-    height: 14rem;
-    margin: 0 auto;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    width: 14rem;
-    z-index: 1; }
-  .about-me-container .text-container {
-    color: #e1e1e1;
-    font-size: 1.15rem;
-    margin: 0 auto;
-    max-width: 80%;
-    text-align: left; }
-    .about-me-container .text-container .header-text {
-      color: #FFFFCC;
-      padding-top: 1rem;
-      text-align: center; }
-    .about-me-container .text-container .body-text {
-      overflow: hidden;
-      padding: .1rem 2rem;
-      height: auto; }
-      .about-me-container .text-container .body-text .extra-text {
-        transform: scaleY(0); }
-        .about-me-container .text-container .body-text .extra-text-expanded {
-          -moz-transition: transform .5s ease-out;
-          -webkit-transition: transform .5s ease-out;
-          transition: transform 0.5s ease-out;
-          height: auto;
-          transform: scaleY(1);
-          transform-origin: top; }
-    .about-me-container .text-container .expand-body {
-      text-align: center;
-      color: #db697a; }
-      .about-me-container .text-container .expand-body i {
-        font-size: 3rem;
-        cursor: pointer; }
+.about-me-container .filler-block {
+  background-color: #64908A;
+  border-top: 3px solid #e7d8d8;
+  height: 17rem;
+  margin: -1.4rem -22%; }
+
+.about-me-container .img-container {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #db697a;
+  border-radius: 50%;
+  height: 14rem;
+  margin: -8rem auto;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  width: 14rem;
+  z-index: 1; }
+
+.about-me-container .text-container {
+  color: #e7d8d8;
+  font-size: 1.15rem;
+  margin: 9rem auto;
+  max-width: 80%;
+  text-align: left; }
+  .about-me-container .text-container .header-text {
+    color: #FFFFCC;
+    padding-top: 1rem;
+    text-align: center; }
+  .about-me-container .text-container .body-text {
+    overflow: hidden;
+    padding: .1rem 2rem;
+    height: auto; }
+    .about-me-container .text-container .body-text .collapsible {
+      border: none;
+      box-shadow: none !important;
+      -webkit-box-shadow: none; }
+      .about-me-container .text-container .body-text .collapsible .active {
+        padding: 0; }
+        .about-me-container .text-container .body-text .collapsible .active i {
+          color: #FFFFCC;
+          -ms-transform: rotate(180deg);
+          /* IE 9 */
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          /* Chrome, Safari, Opera */
+          -webkit-transition-duration: .5s;
+          /* Safari 4.0 - 8.0 */
+          transition-duration: .5s; }
+      .about-me-container .text-container .body-text .collapsible-header {
+        background-color: transparent;
+        border: none; }
+        .about-me-container .text-container .body-text .collapsible-header i {
+          color: #db697a;
+          font-size: 3rem;
+          margin: 0 auto;
+          transition-duration: .5s; }
+          .about-me-container .text-container .body-text .collapsible-header i:hover {
+            color: #FFFFCC;
+            font-size: 3.5rem;
+            transition-duration: .5s; }
+      .about-me-container .text-container .body-text .collapsible-body {
+        border: none;
+        padding: 0; }
 
 body {
   background-color: #383838;
@@ -129,7 +150,7 @@ body {
 .loading-container {
   margin-top: 25%; }
   .loading-container .loading-text {
-    color: #e1e1e1; }
+    color: #e7d8d8; }
   .loading-container .image {
     display: none; }
 
@@ -137,12 +158,12 @@ nav {
   background-color: #CC2A41 !important; }
 
 .no-match-container {
-  color: #e1e1e1; }
+  color: #e7d8d8; }
   .no-match-container img {
     height: 60vh; }
 
 .portfolio-container .portfolio-sub-text {
-  color: #e1e1e1;
+  color: #e7d8d8;
   font-size: 1.9rem;
   font-weight: 200; }
 
