@@ -1,7 +1,13 @@
 @import 'appColors';
 
 .about-me-container {
-    margin-top: 5rem;
+
+    .filler-block {
+        background-color: $primaryTeal;
+        border-top: 3px solid $subTextGrey;
+        height: 17rem;
+        margin: -1.4rem -22%;
+    }
 
     .img-container {
         background-position: center center;
@@ -10,7 +16,7 @@
         border: 1px solid $secondarySalmon;
         border-radius: 50%;
         height: 14rem;
-        margin: 0 auto;
+        margin: -8rem auto;
         transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
         width: 14rem;
@@ -20,7 +26,7 @@
     .text-container {
         color: $subTextGrey;
         font-size: 1.15rem;
-        margin: 0 auto;
+        margin: 9rem auto;
         max-width: 80%;
         text-align: left;
         
@@ -35,47 +41,48 @@
             padding: .1rem 2rem;
             height: auto;
             
-            .extra-text {
-                transform:scaleY(0);
+            .collapsible {
+                border: none;
+                box-shadow: none !important;
+                -webkit-box-shadow: none;
+                
+                & .active {
+                    padding: 0;
 
-                &-expanded {
-                    -moz-transition: transform .5s ease-out;
-                    -webkit-transition: transform .5s ease-out;
-                    transition:transform 0.5s ease-out; // note that we're transitioning transform, not height!
-                    height:auto;
-                    transform:scaleY(1); // implicit, but good to specify explicitly
-                    transform-origin:top;
+                    i{
+                        color: $primaryYellow;
+                        -ms-transform: rotate(180deg); /* IE 9 */
+                        transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+                        -webkit-transition-duration: .5s;
+                        /* Safari 4.0 - 8.0 */
+                        transition-duration: .5s;
+                    }
                 }
-            }
-        }
 
-        .expand-body {
-            text-align: center;
-            color: $secondarySalmon;
-
-            i {
-                font-size: 3rem;
-                cursor: pointer;
+                &-header {
+                    background-color: transparent;
+                    border: none;
+                    
+                    i {
+                        color: $secondarySalmon;
+                        font-size: 3rem;
+                        margin: 0 auto;
+                        transition-duration: .5s;
+                        
+                        &:hover {
+                            color: $primaryYellow;
+                            font-size: 3.5rem;
+                            transition-duration: .5s;
+                        }
+                    }
+                }
+                
+                &-body {
+                    border: none;
+                    padding: 0;
+                }
             }
         }
     }
 }
-
-// @media only screen and (max-width: 485px) {
-//     .about-me-container{
-        
-//         .img-container{
-//             left: auto;
-//             margin: 0 auto;
-//         }
-
-//         .text-container{
-//             left: auto;
-//             max-width: 100%;
-
-//             .header-text{
-//                 padding-top: 5rem;
-//             }
-//         }
-//     }
-// }
