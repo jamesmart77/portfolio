@@ -43,10 +43,7 @@
           /* IE 9 */
           transform: rotate(180deg);
           -webkit-transform: rotate(180deg);
-          /* Chrome, Safari, Opera */
-          -webkit-transition-duration: .5s;
-          /* Safari 4.0 - 8.0 */
-          transition-duration: .5s; }
+          /* Chrome, Safari, Opera */ }
       .about-me-container .text-container .body-text .collapsible-header {
         background-color: transparent;
         border: none; }
@@ -106,46 +103,88 @@ body {
   to {
     opacity: 1; } }
 
-.banner-container .profile {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom: 0.5rem solid #FFFFCC;
-  height: 50rem;
-  margin-top: -1.4rem;
-  transition-duration: .5s;
-  width: 100%; }
-  .banner-container .profile-text {
-    border: 3px solid #CC2A41;
-    margin: 0 auto;
-    padding: 2rem; }
-    .banner-container .profile-text a {
-      color: #fff;
-      transition-duration: 0.4s; }
-      .banner-container .profile-text a:hover {
-        color: #FFFFCC;
-        font-size: 3.5rem;
+.banner-container {
+  background-color: #424254; }
+  .banner-container .profile {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 0.5rem solid #FFFFCC;
+    height: 50rem;
+    margin-top: -1.4rem;
+    transition-duration: .5s;
+    width: 100%; }
+    .banner-container .profile-text {
+      border: 3px solid #CC2A41;
+      margin: 0 auto;
+      padding: 2rem; }
+      .banner-container .profile-text a {
+        color: #fff;
         transition-duration: 0.4s; }
-
-.banner-container .about-me-btn {
-  background-color: #64908A;
-  border: 1px solid #FFFFCC;
-  border-radius: 0 0 25px 25px;
-  font-size: 1rem;
-  height: 100% !important;
-  transition-duration: .5s; }
-  .banner-container .about-me-btn a {
-    color: #fff; }
-  .banner-container .about-me-btn:hover {
-    background-color: #FFFFCC;
+        .banner-container .profile-text a:hover {
+          color: #FFFFCC;
+          font-size: 3.5rem;
+          transition-duration: 0.4s; }
+  .banner-container .btn-row {
+    height: 24rem; }
+  .banner-container .about-me-btn {
+    background-color: #64908A;
+    border: 1px solid #FFFFCC;
+    border-radius: 0 0 25px 25px;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
     transition-duration: .5s; }
-    .banner-container .about-me-btn:hover a {
-      color: #64908A; }
+    .banner-container .about-me-btn a {
+      color: #fff; }
+    .banner-container .about-me-btn:hover {
+      background-color: #FFFFCC;
+      transition-duration: .5s; }
+      .banner-container .about-me-btn:hover a {
+        color: #64908A; }
 
 @media only screen and (max-width: 993px) {
   .banner-container .profile {
     height: 30rem;
     transition-duration: .5s; } }
+
+.experience-container {
+  color: #e7d8d8;
+  margin: 0 1.5rem 1.5rem 3rem;
+  position: relative;
+  top: -17rem; }
+  .experience-container-row {
+    display: flex; }
+    .experience-container-row-col {
+      display: flex; }
+  .experience-container .exp-section {
+    background-color: #e7d8d8;
+    border: 1px solid #64908A;
+    border-radius: 40px;
+    color: #424254;
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-bottom: 2rem;
+    padding: 2rem; }
+    .experience-container .exp-section .tech-row-even {
+      background: linear-gradient(0.25turn, #64908A, #c1d2d0);
+      border: 1px solid #64908A;
+      border-radius: 25px;
+      color: #ffffe5;
+      padding: .5rem;
+      margin-bottom: .5rem;
+      width: 85%; }
+    .experience-container .exp-section .tech-row-odd {
+      background: linear-gradient(0.75turn, #FFFFCC, #ffffe5);
+      border: 1px solid #ffff80;
+      border-radius: 25px;
+      color: #424254;
+      float: right;
+      padding: .5rem;
+      margin-bottom: .5rem;
+      text-align: right;
+      width: 85%; }
 
 .loading-container {
   margin-top: 25%; }

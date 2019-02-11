@@ -15,7 +15,7 @@ export class Banner extends Component {
                                 rel="noopener noreferrer">Let's Connect</a>
                         </h3>
                     </div>
-                    <Row className='center'>
+                    <Row className='btn-row center'>
                         <Button className='about-me-btn'>
                             <Link to='/aboutme'>About Me</Link>
                         </Button>
