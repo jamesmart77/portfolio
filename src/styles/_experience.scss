@@ -1,0 +1,62 @@
+@import 'appColors';
+
+.experience {
+    
+    &-container {
+        color: $subTextGrey;
+        margin: 0 1.5rem 1.5rem 3rem;
+        position: relative;
+        top: -17rem;
+
+        &-row{
+            display: flex;
+            
+            &-col {
+                display: flex;
+            }
+        }
+    
+        .exp-section {
+            background-color: $subTextGrey;
+            border: 1px solid $primaryTeal;
+            border-radius: 40px;
+            color: $primarySlate;
+            display: block;
+            flex-basis: 0;
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin-bottom: 2rem;
+            padding: 2rem;
+
+            .tech-row {
+                
+                &-even {
+                    background: linear-gradient(0.25turn, $primaryTeal, $secondaryTeal);
+                    border: 1px solid $primaryTeal;
+                    border-radius: 25px;
+                    color: $secondaryYellow;
+                    padding: .5rem;
+                    margin-bottom: .5rem;
+                    width: 85%;
+                }
+                
+                &-odd {
+                    background: linear-gradient(0.75turn, $primaryYellow, $secondaryYellow);
+                    border: 1px solid $strongYellow;
+                    border-radius: 25px;
+                    color: $primarySlate;
+                    float: right;
+                    padding: .5rem;
+                    margin-bottom: .5rem;
+                    text-align: right;
+                    width: 85%;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 993px) {
+    
+}

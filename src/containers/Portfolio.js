@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Col, Row } from 'react-materialize';
 import ProjectCard from '../components/ProjectCard';
 import Banner from '../components/Banner';
+import Experience from '../components/Experience';
 import * as projectData from '../helpers/projects.json';
 
 class Portfolio extends Component {
@@ -9,6 +10,7 @@ class Portfolio extends Component {
     return (
       <div className="portfolio-container">
           <Banner />
+          <Experience />
           <Row>
             <Col s={12} className='center'>
               <div className='portfolio-sub-text'>
