@@ -1,14 +1,14 @@
 @import 'appColors';
 
 .banner-container {
-    background-color: $primarySlate;
+    background-color: $secondarySlate;
 
     
     .profile{
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-bottom: 0.5rem solid $primaryYellow;
+        border-bottom: 0.2rem solid $primarySalmon;
         height: 50rem;
         margin-top: -1.4rem;
         transition-duration: .5s;
@@ -33,15 +33,16 @@
     }
     
     .btn-row{
-        height: 24rem;
+        height: 30rem;
     }
 
     .about-me-btn{
-        background-color: $primaryTeal;
-        border: 1px solid $primaryYellow;
-        border-radius: 0 0 25px 25px;
-        font-size: 1rem;
-        margin-bottom: 2.5rem;
+        background-color: $primarySalmon;
+        border-radius: 25px;
+        font-size: 2rem;
+        height: auto;
+        margin: 1.5rem;
+        padding: 0.25rem 5rem;
         transition-duration: .5s;
         
         a {

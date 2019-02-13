@@ -4,9 +4,13 @@
     
     &-container {
         color: $subTextGrey;
-        margin: 0 1.5rem 1.5rem 3rem;
+        margin: 1.5rem;
         position: relative;
-        top: -17rem;
+        top: -14rem;
+
+        &-header {
+            margin: 0 0 3.5rem 0;
+        }
 
         &-row{
             display: flex;
@@ -27,6 +31,14 @@
             flex-shrink: 1;
             margin-bottom: 2rem;
             padding: 2rem;
+
+            &-header {
+                color: $primarySalmon;
+                max-width: 17rem;
+                margin: 0 auto;
+                position: relative;
+                top: -3.4rem;
+            }
 
             .tech-row {
                 
@@ -57,6 +69,24 @@
 
 }
 
-@media only screen and (max-width: 993px) {
-    
+@media only screen and (max-width: 600px) {
+    .experience {
+        &-container {
+            &-row{
+                display: block;
+                
+                &-col {
+                    display: block;
+
+                    .exp-section-sub-row{
+                        text-align: center;
+
+                        .chip {
+                            font-size: 1.25rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

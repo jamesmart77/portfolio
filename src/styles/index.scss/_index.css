@@ -1,6 +1,6 @@
 .about-me-container .filler-block {
   background-color: #64908A;
-  border-top: 3px solid #e7d8d8;
+  border-top: 3px solid #faf7f7;
   height: 17rem;
   margin: -1.4rem -22%; }
 
@@ -18,7 +18,7 @@
   z-index: 1; }
 
 .about-me-container .text-container {
-  color: #e7d8d8;
+  color: #faf7f7;
   font-size: 1.15rem;
   margin: 9rem auto;
   max-width: 80%;
@@ -104,12 +104,12 @@ body {
     opacity: 1; } }
 
 .banner-container {
-  background-color: #424254; }
+  background-color: #676776; }
   .banner-container .profile {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 0.5rem solid #FFFFCC;
+    border-bottom: 0.2rem solid #CC2A41;
     height: 50rem;
     margin-top: -1.4rem;
     transition-duration: .5s;
@@ -126,13 +126,14 @@ body {
           font-size: 3.5rem;
           transition-duration: 0.4s; }
   .banner-container .btn-row {
-    height: 24rem; }
+    height: 30rem; }
   .banner-container .about-me-btn {
-    background-color: #64908A;
-    border: 1px solid #FFFFCC;
-    border-radius: 0 0 25px 25px;
-    font-size: 1rem;
-    margin-bottom: 2.5rem;
+    background-color: #CC2A41;
+    border-radius: 25px;
+    font-size: 2rem;
+    height: auto;
+    margin: 1.5rem;
+    padding: 0.25rem 5rem;
     transition-duration: .5s; }
     .banner-container .about-me-btn a {
       color: #fff; }
@@ -148,16 +149,18 @@ body {
     transition-duration: .5s; } }
 
 .experience-container {
-  color: #e7d8d8;
-  margin: 0 1.5rem 1.5rem 3rem;
+  color: #faf7f7;
+  margin: 1.5rem;
   position: relative;
-  top: -17rem; }
+  top: -14rem; }
+  .experience-container-header {
+    margin: 0 0 3.5rem 0; }
   .experience-container-row {
     display: flex; }
     .experience-container-row-col {
       display: flex; }
   .experience-container .exp-section {
-    background-color: #e7d8d8;
+    background-color: #faf7f7;
     border: 1px solid #64908A;
     border-radius: 40px;
     color: #424254;
@@ -167,6 +170,12 @@ body {
     flex-shrink: 1;
     margin-bottom: 2rem;
     padding: 2rem; }
+    .experience-container .exp-section-header {
+      color: #CC2A41;
+      max-width: 17rem;
+      margin: 0 auto;
+      position: relative;
+      top: -3.4rem; }
     .experience-container .exp-section .tech-row-even {
       background: linear-gradient(0.25turn, #64908A, #c1d2d0);
       border: 1px solid #64908A;
@@ -186,23 +195,39 @@ body {
       text-align: right;
       width: 85%; }
 
+@media only screen and (max-width: 600px) {
+  .experience-container-row {
+    display: block; }
+    .experience-container-row-col {
+      display: block; }
+      .experience-container-row-col .exp-section-sub-row {
+        text-align: center; }
+        .experience-container-row-col .exp-section-sub-row .chip {
+          font-size: 1.25rem !important; } }
+
 .loading-container {
   margin-top: 25%; }
   .loading-container .loading-text {
-    color: #e7d8d8; }
+    color: #faf7f7; }
   .loading-container .image {
     display: none; }
 
 nav {
   background-color: #CC2A41 !important; }
+  nav .brand-logo {
+    font-size: 2.75rem; }
+  nav ul a {
+    font-size: 1.5rem; }
+    nav ul a:hover {
+      color: #64908A; }
 
 .no-match-container {
-  color: #e7d8d8; }
+  color: #faf7f7; }
   .no-match-container img {
     height: 60vh; }
 
 .portfolio-container .portfolio-sub-text {
-  color: #e7d8d8;
+  color: #faf7f7;
   font-size: 1.9rem;
   font-weight: 200; }
 
