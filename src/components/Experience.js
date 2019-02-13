@@ -8,24 +8,18 @@ export class Experience extends Component {
         return(
             <div className='experience-container'>
                 <Row>
-                    <Row>
-                        <Col s={12}>
-                            <h3 className='center'>Experience</h3>
-                        </Col>
-                    </Row>
                     <Row className='experience-container-row'>
                         <Col m={4} s={12} className='experience-container-row-col'>
                             <div className='exp-section'>
-                                <h4 className='center'>Front-End</h4>
-                                <Row>
+                                <h4 className='exp-section-header center'>Front-End</h4>
+                                <Row className='exp-section-sub-row'>
                                     {frontend.frameworks.map(item => {
                                         return (
                                             <Chip key={item}>{item}</Chip>
                                         )
                                     })}
                                 </Row>
-                                <div className='divider' />
-                                <Row>
+                                <Row className='exp-section-sub-row'>
                                     <h5 className='center'>IDEs</h5>
                                     {frontend.ides.map(item => {
                                         return (
@@ -33,8 +27,7 @@ export class Experience extends Component {
                                         )
                                     })}
                                 </Row>
-                                <div className='divider' />
-                                <Row>
+                                <Row className='exp-section-sub-row'>
                                     <h5 className='center'>Testing</h5>
                                     {frontend.testing.map(item => {
                                         return (
@@ -42,8 +35,7 @@ export class Experience extends Component {
                                         )
                                     })}
                                 </Row>
-                                <div className='divider' />
-                                <Row>
+                                <Row className='exp-section-sub-row'>
                                     <h5 className='center'>Other</h5>
                                     {frontend.other.map(item => {
                                         return (
@@ -55,7 +47,7 @@ export class Experience extends Component {
                         </Col>
                         <Col m={4} s={12} className='experience-container-row-col'>
                             <div className='exp-section'>
-                                <h4 className='center'>Back-End</h4>
+                                <h4 className='exp-section-header center'>Back-End</h4>
                                 <Row>
                                     <div className='tech-row-odd'>Node.JS</div>
                                     <div className='tech-row-odd'>SpringBoot</div>
@@ -87,7 +79,7 @@ export class Experience extends Component {
                         </Col>
                         <Col m={4} s={12} className='experience-container-row-col'>
                             <div className='exp-section'>
-                                <h4 className='center truncate'>Competencies</h4>
+                                <h4 className='exp-section-header center truncate'>Competencies</h4>
                                 <Row>
                                     <div className='tech-row-even truncate'>Problem-solving</div>
                                     <div className='tech-row-even truncate'>Debugging</div>

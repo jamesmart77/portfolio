@@ -126,7 +126,7 @@ body {
           font-size: 3.5rem;
           transition-duration: 0.4s; }
   .banner-container .btn-row {
-    height: 24rem; }
+    height: 30rem; }
   .banner-container .about-me-btn {
     background-color: #CC2A41;
     border-radius: 25px;
@@ -152,7 +152,9 @@ body {
   color: #faf7f7;
   margin: 1.5rem;
   position: relative;
-  top: -17rem; }
+  top: -14rem; }
+  .experience-container-header {
+    margin: 0 0 3.5rem 0; }
   .experience-container-row {
     display: flex; }
     .experience-container-row-col {
@@ -168,6 +170,12 @@ body {
     flex-shrink: 1;
     margin-bottom: 2rem;
     padding: 2rem; }
+    .experience-container .exp-section-header {
+      color: #CC2A41;
+      max-width: 17rem;
+      margin: 0 auto;
+      position: relative;
+      top: -3.4rem; }
     .experience-container .exp-section .tech-row-even {
       background: linear-gradient(0.25turn, #64908A, #c1d2d0);
       border: 1px solid #64908A;
@@ -191,7 +199,11 @@ body {
   .experience-container-row {
     display: block; }
     .experience-container-row-col {
-      display: block; } }
+      display: block; }
+      .experience-container-row-col .exp-section-sub-row {
+        text-align: center; }
+        .experience-container-row-col .exp-section-sub-row .chip {
+          font-size: 1.25rem !important; } }
 
 .loading-container {
   margin-top: 25%; }
