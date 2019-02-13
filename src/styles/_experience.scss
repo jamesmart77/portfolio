@@ -21,7 +21,7 @@
         }
     
         .exp-section {
-            background-color: $subTextGrey;
+            background: linear-gradient($subTextGrey, $white);
             border: 1px solid $primaryTeal;
             border-radius: 40px;
             color: $primarySlate;
@@ -29,45 +29,51 @@
             flex-basis: 0;
             flex-grow: 1;
             flex-shrink: 1;
-            margin-bottom: 2rem;
+            margin-bottom: 5rem;
             padding: 2rem;
 
             &-header {
-                color: $primarySalmon;
+                color: $subTextGrey;
                 max-width: 17rem;
                 margin: 0 auto;
                 position: relative;
-                top: -3.4rem;
+                top: -5.5rem;
             }
 
-            .tech-row {
-                
-                &-even {
-                    background: linear-gradient(0.25turn, $primaryTeal, $secondaryTeal);
-                    border: 1px solid $primaryTeal;
-                    border-radius: 25px;
-                    color: $secondaryYellow;
-                    padding: .5rem;
-                    margin-bottom: .5rem;
-                    width: 85%;
-                }
-                
-                &-odd {
-                    background: linear-gradient(0.75turn, $primaryYellow, $secondaryYellow);
-                    border: 1px solid $strongYellow;
-                    border-radius: 25px;
-                    color: $primarySlate;
-                    float: right;
-                    padding: .5rem;
-                    margin-bottom: .5rem;
-                    text-align: right;
-                    width: 85%;
+            &-sub-header {
+                margin-top: -2rem;
+                font-style: italic;
+            }
+
+            .experience-chip {
+                transition-duration: 0.5s;
+
+                &:hover, &:active {
+                    animation: shake 0.25s; 
+                    animation-iteration-count: 2;
+                    background-color: $strongYellow;
+                    color: $primaryTeal;
+                    font-size: 1rem;
+                    font-weight: 700;
                 }
             }
         }
     }
-
 }
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 @media only screen and (max-width: 600px) {
     .experience {
