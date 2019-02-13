@@ -2,7 +2,7 @@
   background-color: #64908A;
   border-top: 3px solid #faf7f7;
   height: 17rem;
-  margin: -1.4rem -22%; }
+  margin: -1.4rem -0.75rem 0 -1.4rem; }
 
 .about-me-container .img-container {
   background-position: center center;
@@ -31,39 +31,28 @@
     overflow: hidden;
     padding: .1rem 2rem;
     height: auto; }
-    .about-me-container .text-container .body-text .collapsible {
-      border: none;
-      box-shadow: none !important;
-      -webkit-box-shadow: none; }
-      .about-me-container .text-container .body-text .collapsible .active {
-        padding: 0; }
-        .about-me-container .text-container .body-text .collapsible .active i {
-          color: #FFFFCC;
-          -ms-transform: rotate(180deg);
-          /* IE 9 */
-          transform: rotate(180deg);
-          -webkit-transform: rotate(180deg);
-          /* Chrome, Safari, Opera */ }
-      .about-me-container .text-container .body-text .collapsible-header {
-        background-color: transparent;
-        border: none; }
-        .about-me-container .text-container .body-text .collapsible-header i {
-          color: #db697a;
-          font-size: 3rem;
-          margin: 0 auto;
-          transition-duration: .5s; }
-          .about-me-container .text-container .body-text .collapsible-header i:hover {
-            color: #FFFFCC;
-            font-size: 3.5rem;
-            transition-duration: .5s; }
-      .about-me-container .text-container .body-text .collapsible-body {
-        border: none;
-        padding: 0; }
+    .about-me-container .text-container .body-text .expand-btn {
+      background-color: rgba(56, 56, 56, 0.6);
+      border: 1px solid #faf7f7;
+      border-radius: 25px;
+      box-shadow: none;
+      color: #faf7f7;
+      font-size: 1rem;
+      margin: 2rem;
+      transition-duration: .5s; }
+      .about-me-container .text-container .body-text .expand-btn:hover {
+        color: #ffff80;
+        transition-duration: .5s;
+        font-size: 1.2rem; }
 
 body {
   background-color: #383838;
   font-family: 'Raleway', sans-serif;
+  font-weight: 200 !important;
   min-width: 360px; }
+
+h3, h4 {
+  font-weight: 200 !important; }
 
 .obj-fade-in {
   -webkit-animation: fadein 2s;
@@ -126,7 +115,7 @@ body {
           font-size: 3.5rem;
           transition-duration: 0.4s; }
   .banner-container .btn-row {
-    height: 30rem; }
+    height: 28rem; }
   .banner-container .about-me-btn {
     background-color: #CC2A41;
     border-radius: 25px;
@@ -147,6 +136,11 @@ body {
   .banner-container .profile {
     height: 30rem;
     transition-duration: .5s; } }
+
+@media only screen and (max-width: 600px) {
+  .banner-container .profile-text {
+    border: 2px solid #CC2A41;
+    padding: 1rem; } }
 
 .experience-container {
   color: #faf7f7;
@@ -213,15 +207,23 @@ body {
   100% {
     transform: translate(1px, -2px) rotate(-1deg); } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 993px) {
   .experience-container-row {
     display: block; }
     .experience-container-row-col {
       display: block; }
-      .experience-container-row-col .exp-section-sub-row {
-        text-align: center; }
-        .experience-container-row-col .exp-section-sub-row .chip {
-          font-size: 1.25rem !important; } }
+      .experience-container-row-col .exp-section {
+        margin-bottom: 8rem; }
+        .experience-container-row-col .exp-section-sub-header {
+          text-align: center; }
+        .experience-container-row-col .exp-section-sub-row {
+          text-align: center; }
+          .experience-container-row-col .exp-section-sub-row .chip {
+            font-size: 1.25rem !important; } }
+
+@media only screen and (max-width: 600px) {
+  .experience-container-row-col .exp-section-sub-row .chip {
+    width: 45%; } }
 
 .loading-container {
   margin-top: 20%; }
@@ -238,6 +240,14 @@ nav {
     font-size: 1.5rem; }
     nav ul a:hover {
       color: #FFFFCC; }
+
+@media only screen and (max-width: 993px) {
+  nav ul a:hover {
+    color: #CC2A41; } }
+
+@media only screen and (max-width: 600px) {
+  nav .brand-logo {
+    font-size: 2rem; } }
 
 .no-match-container {
   color: #faf7f7; }
