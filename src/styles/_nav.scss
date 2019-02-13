@@ -18,3 +18,21 @@ nav {
         }
     }
 }
+
+@media only screen and (max-width: 993px) {
+    nav {
+        ul {
+            a:hover {
+                color: $primarySalmon;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        .brand-logo {
+            font-size: 2rem;
+        }
+    }
+}

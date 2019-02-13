@@ -83,10 +83,6 @@
             "name":"Handlebars"
         },
         {
-            "img":"",
-            "name":"Express"
-        },
-        {
             "img":"/icons/postgres.png",
             "name":"Postgres"
         },
@@ -105,6 +101,10 @@
         {
             "img":"",
             "name":"Sequelize"
+        },
+        {
+            "img":"",
+            "name":"Express"
         },
         {
             "img":"",

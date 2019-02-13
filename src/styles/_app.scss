@@ -3,7 +3,12 @@
 body {
     background-color: $primaryGrey;
     font-family: 'Raleway', sans-serif;
+    font-weight: 200 !important;
     min-width: 360px;
+}
+
+h3, h4 {
+    font-weight: 200 !important;
 }
 
 .obj-fade-in {
