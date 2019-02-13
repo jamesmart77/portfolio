@@ -1,0 +1,155 @@
+{
+    "frontEnd": [
+        {
+            "img":"/icons/bitbucket.png",
+            "name": "BitBucket"
+        },
+        {
+            "img":"/icons/react.png",
+            "name": "React"
+        },
+        {
+            "img":"/icons/redux.png",
+            "name": "Redux"
+        },
+        {
+            "img":"/icons/html5.png",
+            "name": "HTML5"
+        },
+        {
+            "img":"/icons/css3.png",
+            "name": "CSS3"
+        },
+        {
+            "img":"/icons/js.png",
+            "name": "ES6"
+        },
+        {
+            "img":"",
+            "name": "Visual Studio Code"
+        },
+        {
+            "img":"",
+            "name": "Intellij"
+        },
+        {
+            "img":"",
+            "name": "Jest"
+        },
+        {
+            "img":"",
+            "name": "Enzyme"
+        },
+        {
+            "img":"",
+            "name": "Mocha"
+        },
+        {
+            "img":"",
+            "name": "Chai"
+        },
+        {
+            "img":"",
+            "name": "Test Cafe"
+        },
+        {
+            "img":"",
+            "name": "Bootstrap"
+        },
+        {
+            "img":"",
+            "name": "Materialize"
+        },
+        {
+            "img":"",
+            "name": "SCSS"
+        }
+    ],
+    "backEnd": [
+        {
+            "img":"/icons/java.png",
+            "name":"Java"
+        },
+        {
+            "img":"/icons/nodeJs.png",
+            "name":"Node.JS"
+        },
+        {
+            "img":"/icons/springBoot.png",
+            "name":"Spring Boot"
+        },
+        {
+            "img":"/icons/handlebars.png",
+            "name":"Handlebars"
+        },
+        {
+            "img":"",
+            "name":"Express"
+        },
+        {
+            "img":"/icons/postgres.png",
+            "name":"Postgres"
+        },
+        {
+            "img":"/icons/firebase.jpg",
+            "name":"Firebase"
+        },
+        {
+            "img":"",
+            "name":"MySql"
+        },
+        {
+            "img":"",
+            "name":"Mongo"
+        },
+        {
+            "img":"",
+            "name":"Sequelize"
+        },
+        {
+            "img":"",
+            "name":"JPA"
+        },
+        {
+            "img":"",
+            "name":"Junit"
+        },
+        {
+            "img":"",
+            "name":"Jest / Enzyme"
+        },
+        {
+            "img":"",
+            "name":"Authentication"
+        }
+    ],
+    "competencies": [
+        {
+            "name":"Problem Solving"
+        },
+        {
+            "name":"Debugging"
+        },
+        {
+            "name":"Performance Optimization"
+        },
+        {
+            "name":"Code Review Capability"
+        },
+        {
+            "name":"System Design"
+        },
+        {
+            "name":"Testing"
+        },
+        {
+            "name":"Frameworks Proficiency"
+        },
+        {
+            "name":"Database Design"
+        },
+        {
+            "name":"Codebase Navigation"
+        }
+    ]
+}
