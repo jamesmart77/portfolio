@@ -68,3 +68,13 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .banner-container {
+        .profile{
+            &-text {
+                border: 2px solid $primarySalmon;
+                padding: 1rem;
+        }
+    }
+}
