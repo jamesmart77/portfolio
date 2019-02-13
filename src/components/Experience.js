@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Row, Button, Col } from 'react-materialize';
+import { Row, Button, Col, Chip } from 'react-materialize';
 import { Link } from 'react-router-dom';
-import Profile from '../images/profile.jpg';
+import * as frontend from '../helpers/frontEnd.json';
 
 export class Experience extends Component {
    render(){
@@ -14,41 +14,48 @@ export class Experience extends Component {
                         </Col>
                     </Row>
                     <Row className='experience-container-row'>
-                        <Col l={4} s={12} className='experience-container-row-col'>
+                        <Col m={4} s={12} className='experience-container-row-col'>
                             <div className='exp-section'>
                                 <h4 className='center'>Front-End</h4>
                                 <Row>
-                                    <div className='tech-row-even'>React</div>
-                                    <div className='tech-row-even'>Redux</div>
-                                    <div className='tech-row-even'>HTML5</div>
-                                    <div className='tech-row-even'>CSS3</div>
-                                    <div className='tech-row-even'>ES6 JS</div>
+                                    {frontend.frameworks.map(item => {
+                                        return (
+                                            <Chip key={item}>{item}</Chip>
+                                        )
+                                    })}
                                 </Row>
+                                <div className='divider' />
                                 <Row>
                                     <h5 className='center'>IDEs</h5>
-                                    <div className='tech-row-odd'>Visual Studio Code</div>
-                                    <div className='tech-row-odd'>Intellij</div>
+                                    {frontend.ides.map(item => {
+                                        return (
+                                            <Chip key={item}>{item}</Chip>
+                                        )
+                                    })}
                                 </Row>
+                                <div className='divider' />
                                 <Row>
                                     <h5 className='center'>Testing</h5>
-                                    <div className='tech-row-even'>Jest</div>
-                                    <div className='tech-row-even'>Enzyme</div>
-                                    <div className='tech-row-even'>Mocha</div>
-                                    <div className='tech-row-even'>Chai</div>
-                                    <div className='tech-row-even'>Test Cafe</div>
+                                    {frontend.testing.map(item => {
+                                        return (
+                                            <Chip key={item}>{item}</Chip>
+                                        )
+                                    })}
                                 </Row>
+                                <div className='divider' />
                                 <Row>
                                     <h5 className='center'>Other</h5>
-                                    <div className='tech-row-odd'>Bootstrap</div>
-                                    <div className='tech-row-odd'>Materialize</div>
-                                    <div className='tech-row-odd'>SCSS</div>
-                                    <div className='tech-row-odd'>BitBucket</div>
+                                    {frontend.other.map(item => {
+                                        return (
+                                            <Chip key={item}>{item}</Chip>
+                                        )
+                                    })}
                                 </Row>
                             </div>
                         </Col>
-                        <Col l={4} s={12} className='experience-container-row-col'>
+                        <Col m={4} s={12} className='experience-container-row-col'>
                             <div className='exp-section'>
-                                <h4>Back-End</h4>
+                                <h4 className='center'>Back-End</h4>
                                 <Row>
                                     <div className='tech-row-odd'>Node.JS</div>
                                     <div className='tech-row-odd'>SpringBoot</div>
@@ -78,9 +85,9 @@ export class Experience extends Component {
                                 </Row>
                             </div>
                         </Col>
-                        <Col l={4} s={12} className='experience-container-row-col'>
+                        <Col m={4} s={12} className='experience-container-row-col'>
                             <div className='exp-section'>
-                                <h4 className='truncate'>Competencies</h4>
+                                <h4 className='center truncate'>Competencies</h4>
                                 <Row>
                                     <div className='tech-row-even truncate'>Problem-solving</div>
                                     <div className='tech-row-even truncate'>Debugging</div>

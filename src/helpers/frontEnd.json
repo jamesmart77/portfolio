@@ -1,0 +1,6 @@
+{
+    "frameworks": ["React" ,"Redux" ,"HTML5" ,"CSS3" ,"ES6 JS"],
+    "ides": ["Visual Studio Code", "Intellij"],
+    "testing": ["Jest", "Enzyme", "Mocha", "Chai", "Test Cafe"],
+    "other": ["Bootstrap", "Materialize", "SCSS", "BitBucket"]
+}
