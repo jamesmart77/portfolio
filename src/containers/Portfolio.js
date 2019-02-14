@@ -6,16 +6,16 @@ import Experience from '../components/Experience';
 import * as projectData from '../helpers/projects.json';
 
 class Portfolio extends Component {
+
   render() {
     return (
       <div className="portfolio-container">
           <Banner />
           <Experience />
           <Row>
-            <Col s={12} className='center'>
-              <div className='portfolio-sub-text'>
-                Full stack developer by day, passionate coder in life.
-              </div>
+            <Col s={10} offset='s1' className='center'>
+              <h2 className='projects-header'>Projects</h2>
+              <div className='divider' />
             </Col>
           </Row>
           <Row>
@@ -23,6 +23,7 @@ class Portfolio extends Component {
               return (
                 <ProjectCard 
                   key={project.id}
+                  id={project.id}
                   title={project.title}
                   description={project.description}
                   appLink={project.appLink}
