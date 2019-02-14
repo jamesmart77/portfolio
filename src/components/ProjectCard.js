@@ -1,36 +1,42 @@
 import React, { Component } from "react";
-import { Card, CardTitle, Col, Row, Tag } from 'react-materialize';
+import { Card, CardTitle, Col, Chip, Row } from 'react-materialize';
 import Profile from '../images/profile.jpg';
+import { Fade, Bounce } from 'react-reveal';
 
 export class ProjectCard extends Component {
 
     render() {
         
-        const { title, description, techStack, appLink, repoLink} = this.props;
+        const { id, title, description, techStack, appLink, repoLink } = this.props;
     
         return(
             <div className='project-card-container'>
-                <Col s={10} l={3} offset='s1 m1 l1'>
-                    <Card className='small'
+                <Col s={10} l={5} offset='s1 l1'>
+                    <Card key={id} className='small'
                         header={<CardTitle reveal image={Profile}>{title}</CardTitle>}
-                        reveal={<div>
-                                    <h5>Project Description</h5>
+                        reveal={<Row>
                                     <p>{description}</p>
                                     <h5>Tech Stack</h5>
-                                    {techStack.map(tech => {
-                                        return (
-                                            <Tag close={false}>{tech}</Tag>
-                                        )
-                                    })}
-                                </div>}>
-                            <Row className='valign-wrapper'>
-                                <Col s={6}>
-                                    <h5><a href={appLink}>View Me</a></h5>
-                                </Col>
-                                <Col s={6}>
-                                    <h6 className='repo-link right'><a href={repoLink}>Checkout Repo</a></h6>
-                                </Col>
-                            </Row>
+                                    <div>
+                                        {techStack.map(tech => {
+                                            return (
+                                                    <Chip className='truncate'>
+                                                        {tech.img && <img src={tech.img} alt='tech type' />}
+                                                        <Bounce>{tech.name}</Bounce>
+                                                    </Chip>
+                                            )
+                                        })}
+                                    </div>
+                                </Row>
+                            }
+                        actions={[<a href={appLink} target='_blank' rel="noopener noreferrer">View App</a>, 
+                                    <a className='repo-link' href={repoLink} target='_blank' rel="noopener noreferrer">Repo</a>]}>
+                            <Fade left fraction={0.6}>
+                                <div 
+                                    className='card-details activator'>
+                                        Tap for details
+                                </div>
+                            </Fade>
                     </Card>
                 </Col>
             </div>

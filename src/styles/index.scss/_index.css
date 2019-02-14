@@ -92,6 +92,14 @@ h3, h4 {
   to {
     opacity: 1; } }
 
+.portfolio-container .projects-header {
+  color: #faf7f7;
+  font-weight: 200; }
+
+@media only screen and (min-width: 993px) {
+  .row .col.offset-l1 {
+    margin-left: 6.5%; } }
+
 .banner-container {
   background-color: #676776; }
   .banner-container .profile {
@@ -144,7 +152,7 @@ h3, h4 {
 
 .experience-container {
   color: #faf7f7;
-  margin: 1.5rem;
+  margin: 1.5rem 1.5rem -7rem 1.5rem;
   position: relative;
   top: -14rem; }
   .experience-container-header {
@@ -182,6 +190,17 @@ h3, h4 {
         color: #64908A;
         font-size: 1rem;
         font-weight: 700; }
+  .experience-container .github-btn {
+    border-radius: 25px;
+    background-color: #64908A;
+    height: auto;
+    padding: .2rem;
+    transition-duration: 0.5s;
+    width: 40%; }
+    .experience-container .github-btn:hover {
+      background-color: #db697a;
+      font-size: 1.1rem;
+      transition-duration: 0.5s; }
 
 @keyframes shake {
   0% {
@@ -219,7 +238,9 @@ h3, h4 {
         .experience-container-row-col .exp-section-sub-row {
           text-align: center; }
           .experience-container-row-col .exp-section-sub-row .chip {
-            font-size: 1.25rem !important; } }
+            font-size: 1.25rem !important; }
+  .experience-container .github-btn {
+    width: 70%; } }
 
 @media only screen and (max-width: 600px) {
   .experience-container-row-col .exp-section-sub-row .chip {
@@ -254,11 +275,51 @@ nav {
   .no-match-container img {
     height: 60vh; }
 
-.portfolio-container .portfolio-sub-text {
-  color: #faf7f7;
-  font-size: 1.9rem;
-  font-weight: 200; }
+.project-card-container .activator {
+  cursor: pointer; }
 
-@media only screen and (min-width: 993px) {
-  .row .col.offset-l1 {
-    margin-left: 6.5%; } }
+.project-card-container .card-title {
+  color: #db697a !important; }
+
+.project-card-container .card-details {
+  background: #faf7f7;
+  border: 1px solid #64908A;
+  border-radius: 25px;
+  color: #64908A;
+  font-weight: 400;
+  max-width: 35%;
+  padding: .25rem 1rem;
+  text-align: center;
+  transition-duration: 0.5s; }
+  .project-card-container .card-details:hover {
+    background-color: #db697a !important;
+    color: #fff;
+    font-size: 1.25rem;
+    transition-duration: 0.5s; }
+
+.project-card-container .card-reveal h5 {
+  margin: 2rem 0; }
+
+.project-card-container .card-reveal .chip {
+  min-width: 18%; }
+
+.project-card-container .card-action a {
+  color: #db697a !important; }
+
+@media only screen and (max-width: 993px) {
+  .project-card-container .card-details {
+    margin: 0 25%;
+    max-width: 100%; }
+  .project-card-container .card-reveal .chip {
+    font-size: 1rem; }
+  .project-card-container .card-action .repo-link {
+    float: right; } }
+
+@media only screen and (max-width: 600px) {
+  .project-card-container .card-details {
+    margin: 0 21%;
+    max-width: 100%; }
+  .project-card-container .card-reveal {
+    text-align: center; }
+    .project-card-container .card-reveal .chip {
+      min-width: 47%; } }

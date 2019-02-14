@@ -10,7 +10,7 @@ export class Experience extends Component {
                 <Row>
                     <Row className='experience-container-row'>
                         <Col l={4} m={12} s={12} className='experience-container-row-col'>
-                            <Fade left fraction={0.5}>
+                            <Fade left fraction={0.35}>
                                 <div className='exp-section'>
                                     <h4 className='exp-section-header center truncate'>Front-End</h4>
                                     <Row>
@@ -32,7 +32,7 @@ export class Experience extends Component {
                             </Fade>
                         </Col>
                         <Col l={4} m={12} s={12} className='experience-container-row-col'>
-                            <Fade left fraction={0.5}>
+                            <Fade left fraction={0.35}>
                                 <div className='exp-section'>
                                     <h4 className='exp-section-header center truncate'>Back-End</h4>
                                     <Row>
@@ -54,7 +54,7 @@ export class Experience extends Component {
                             </Fade>
                         </Col>
                         <Col l={4} m={12} s={12} className='experience-container-row-col'>
-                            <Fade right fraction={0.5}>
+                            <Fade right fraction={0.35}>
                                 <div className='exp-section'>
                                     <h4 className='exp-section-header center truncate'>Competencies</h4>
                                     <Row>
@@ -74,7 +74,7 @@ export class Experience extends Component {
                     </Row>
                     
                     <Row className='center'>
-                        <Button>Checkout My GitHub</Button>
+                        <Button className='github-btn'>Checkout My GitHub</Button>
                     </Row>
                 </Row>
             </div>

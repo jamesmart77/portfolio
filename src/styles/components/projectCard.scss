@@ -1,0 +1,85 @@
+@import '../appColors';
+
+.project-card-container {
+    .activator {
+        cursor: pointer;
+    }
+
+    .card-title {
+        color: $secondarySalmon !important;
+    }
+
+    .card-details {
+        background: $subTextGrey;
+        border: 1px solid $primaryTeal;
+        border-radius: 25px;
+        color: $primaryTeal;
+        font-weight: 400;
+        max-width: 35%;
+        padding: .25rem 1rem;
+        text-align: center;
+        transition-duration: 0.5s;
+
+        &:hover{
+            background-color: $secondarySalmon !important;
+            color: $white;
+            font-size: 1.25rem;
+            transition-duration: 0.5s;
+        }
+    }
+
+    .card-reveal {
+        h5 {
+            margin: 2rem 0;
+        }
+
+        .chip {
+            min-width: 18%;
+        }
+    }
+
+    .card-action {
+        a {
+            color: $secondarySalmon !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .project-card-container {
+        .card-details {
+            margin: 0 25%;
+            max-width: 100%;
+        } 
+
+        .card-reveal {
+             
+            .chip {
+                font-size: 1rem;
+            }
+        }
+
+        .card-action {
+            .repo-link {
+                float: right;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project-card-container {
+        .card-details {
+            margin: 0 21%;
+            max-width: 100%;
+        } 
+
+        .card-reveal {
+            text-align: center;
+            
+            .chip {
+                min-width: 47%;
+            }
+        }
+    }
+}

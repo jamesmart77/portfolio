@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Col, Row, Button } from 'react-materialize';
+import { Col, Row, Button } from 'react-materialize';
 import Photo from '../images/family_photo.jpg';
 import { Fade } from 'react-reveal';
 

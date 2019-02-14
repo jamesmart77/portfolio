@@ -1,11 +1,10 @@
-@import 'appColors';
+@import '../appColors';
 
 .portfolio-container {
-   .portfolio-sub-text {
-       color: $subTextGrey;
-       font-size: 1.9rem;
-       font-weight: 200;
-   }
+    .projects-header {
+        color: $subTextGrey;
+        font-weight: 200;
+    }
 }
 
 @media only screen and (min-width: 993px) {
