@@ -74,7 +74,9 @@ export class Experience extends Component {
                     </Row>
                     
                     <Row className='center'>
-                        <Button className='github-btn'>Checkout My GitHub</Button>
+                        <Button node='a' 
+                                href='https://github.com/jamesmart77' 
+                                className='github-btn'>Checkout My GitHub</Button>
                     </Row>
                 </Row>
             </div>

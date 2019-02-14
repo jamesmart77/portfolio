@@ -42,7 +42,7 @@ export class LoadingSpinner extends Component {
                     <Col s={12}>
                         <div className='loading-text'>
                             <h5>Beep...Boop...Beep</h5>
-                            <h4>Lift off in: {this.state.countDown}</h4>
+                            <h4>Lift off in {this.state.countDown}</h4>
                         </div>
                         <div className='image' style={ {backgroundImage: `url(${Profile})`} } />
                         <div className='image' style={ {backgroundImage: `url(${Family})`} } />
