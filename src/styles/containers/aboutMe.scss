@@ -1,12 +1,12 @@
 @import '../appColors';
 
 .about-me-container {
+    &-row {
+        margin-bottom: 0;
+    }
 
-    .filler-block {
-        background-color: $primaryTeal;
-        border-top: 3px solid $subTextGrey;
-        height: 17rem;
-        margin: -1.4rem -0.75rem 0 -1.4rem;
+    .wood-parallax {
+        margin-top: -1.5rem;
     }
 
     .img-container {
@@ -48,7 +48,7 @@
                 box-shadow: none;
                 color: $subTextGrey;
                 font-size: 1rem;
-                margin: 2rem;
+                margin: 2rem auto;
                 transition-duration: .5s;
 
                 &:hover {
@@ -56,6 +56,40 @@
                     transition-duration: .5s;
                     font-size: 1.2rem;
                 }
+            }
+        }
+    }
+
+    footer {
+        .unsplash-link {
+            background-color:black;
+            color:white;
+            text-decoration:none;
+            padding:4px 6px;
+            font-size:12px;
+            font-weight:bold;
+            line-height:1.2;
+            display:inline-block;
+            border-radius:3px;
+
+            span {
+                display:inline-block;
+                padding:2px 3px;
+
+                svg {
+                    height:12px;
+                    width:auto;
+                    position:relative;
+                    vertical-align:middle;
+                    top:-2px;
+                    fill:white
+                }
+            }
+        }
+
+        .container {
+            a {
+                margin-right: 0.5rem;
             }
         }
     }

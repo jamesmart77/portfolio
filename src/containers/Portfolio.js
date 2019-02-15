@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row } from 'react-materialize';
+import { Col, Row, Footer, Button } from 'react-materialize';
 import ProjectCard from '../components/ProjectCard';
 import Banner from '../components/Banner';
 import Experience from '../components/Experience';
@@ -33,6 +33,25 @@ class Portfolio extends Component {
               )
             })}
           </Row>
+          <Footer copyrights="&copy; 2019 Copyright James Martineau"
+          moreLinks={
+            <div className='valign-wrapper'>
+              <a className="grey-text text-lighten-4 right" href="https://github.com/jamesmart77">GitHub</a>
+              <a className="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/jamesrmartineau">LinkedIn</a>
+            </div>
+          }
+        >
+            <h5 className="white-text">Additional Information</h5>
+            <Row>
+              <Button className='footer-email-btn'
+                      floating 
+                      tooltip='Feel free to contact me via email'
+                      node='a' 
+                      href="mailto:jamesmart77@gmail.com" 
+                      waves='light' 
+                      icon='email'/>
+            </Row>
+        </Footer>
       </div>
     );
   }
