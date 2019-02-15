@@ -344,8 +344,12 @@ nav {
 .project-card-container .activator {
   cursor: pointer; }
 
-.project-card-container .card-title {
-  color: #db697a !important; }
+.project-card-container .card-image img {
+  opacity: 0.4; }
+
+.project-card-container .card-image .card-title {
+  color: #db697a !important;
+  font-weight: 400; }
 
 .project-card-container .card-details {
   background: #faf7f7;

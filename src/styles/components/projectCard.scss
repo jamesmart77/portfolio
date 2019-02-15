@@ -4,9 +4,15 @@
     .activator {
         cursor: pointer;
     }
+    .card-image {
+        img { 
+            opacity: 0.4;
+        }
 
-    .card-title {
-        color: $secondarySalmon !important;
+        .card-title {
+            color: $secondarySalmon !important;
+            font-weight: 400;
+        }
     }
 
     .card-details {

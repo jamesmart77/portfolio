@@ -30,6 +30,7 @@ class Portfolio extends Component {
                   appLink={project.appLink}
                   repoLink={project.repoLink}
                   techStack={project.techStack}
+                  imageLink={project.imageLink}
                 />
               )
             })}

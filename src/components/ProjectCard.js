@@ -7,13 +7,13 @@ export class ProjectCard extends Component {
 
     render() {
         
-        const { id, title, description, techStack, appLink, repoLink } = this.props;
+        const { id, title, description, techStack, appLink, repoLink, imageLink } = this.props;
     
         return(
             <div className='project-card-container'>
                 <Col s={10} l={5} offset='s1 l1'>
                     <Card key={id} className='small'
-                        header={<CardTitle reveal image={Profile}>{title}</CardTitle>}
+                        header={<CardTitle reveal image={imageLink ? imageLink : Profile}>{title}</CardTitle>}
                         reveal={<Row>
                                     <p>{description}</p>
                                     <h5>Tech Stack</h5>

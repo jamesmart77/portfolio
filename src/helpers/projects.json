@@ -18,6 +18,10 @@
                     "name": "React"
                 },
                 {
+                    "img": "/icons/redux.png",
+                    "name": "Redux"
+                },
+                {
                     "img": "",
                     "name": "Express"
                 },
@@ -35,24 +39,37 @@
                 }
             ],
             "appLink": "https://sched-aroo.herokuapp.com",
-            "repoLink": "https://github.com/jamesmart77/scheduling_app"
+            "repoLink": "https://github.com/jamesmart77/scheduling_app",
+            "imageLink": "/icons/schedAroo.png"
         },
         {
             "id": 2,
-            "title": "Sched-Aroo",
-            "description": "Scheduling application for recurring events and volunteer coordination with a MVC design.",
+            "title": "Friend Connection",
+            "description": "Simple friend matching application based on the closeness of user's completion of assessment.",
             "techStack":  [
                 {
                     "img": "/icons/nodeJs.png",
                     "name": "Node"
                 },
                 {
-                    "img": "/icons/postgres.png",
-                    "name": "Postgres"
+                    "img": "/icons/html5.png",
+                    "name": "HTML5"
                 },
                 {
-                    "img": "/icons/react.png",
-                    "name": "React"
+                    "img": "/icons/css3.png",
+                    "name": "CSS3"
+                },
+                {
+                    "img": "/icons/facebook.png",
+                    "name": "Auth"
+                },
+                {
+                    "img": "/icons/google.png",
+                    "name": "Auth"
+                },
+                {
+                    "img": "",
+                    "name": "MySQL"
                 },
                 {
                     "img": "",
@@ -64,32 +81,37 @@
                 },
                 {
                     "img": "",
-                    "name": "Materialize"
-                },
-                {
-                    "img": "",
-                    "name": "SCSS"
+                    "name": "Bootstrap"
                 }
             ],
-            "appLink": "https://sched-aroo.herokuapp.com",
-            "repoLink": "https://github.com/jamesmart77/scheduling_app"
+            "appLink": "https://friendconnection.herokuapp.com/",
+            "repoLink": "https://github.com/jamesmart77/friendFinder",
+            "imageLink": "/icons/social.jpg"
         },
         {
             "id": 3,
-            "title": "Sched-Aroo",
-            "description": "Scheduling application for recurring events and volunteer coordination with a MVC design.",
+            "title": "BeFree Sermons App",
+            "description": "Sermon uploads made easy for admins and quickly searchable and downloadable for users",
             "techStack":  [
                 {
                     "img": "/icons/nodeJs.png",
                     "name": "Node"
                 },
                 {
-                    "img": "/icons/postgres.png",
-                    "name": "Postgres"
-                },
-                {
                     "img": "/icons/react.png",
                     "name": "React"
+                },
+                {
+                    "img": "/icons/js.png",
+                    "name": "ES6"
+                },
+                {
+                    "img": "/icons/css3.png",
+                    "name": "CSS3"
+                },
+                {
+                    "img": "",
+                    "name": "MongoDB"
                 },
                 {
                     "img": "",
@@ -97,56 +119,76 @@
                 },
                 {
                     "img": "",
-                    "name": "Sequelize"
+                    "name": "JWTs"
                 },
                 {
                     "img": "",
                     "name": "Materialize"
-                },
-                {
-                    "img": "",
-                    "name": "SCSS"
                 }
             ],
-            "appLink": "https://sched-aroo.herokuapp.com",
-            "repoLink": "https://github.com/jamesmart77/scheduling_app"
+            "appLink": "https://befreetech.herokuapp.com",
+            "repoLink": "https://github.com/jamesmart77/befree-sermons",
+            "imageLink": "/icons/befree.png"
         },
         {
             "id": 4,
-            "title": "Sched-Aroo",
-            "description": "Scheduling application for recurring events and volunteer coordination with a MVC design.",
+            "title": "Rock Paper Scissors",
+            "description": "Classic two player RPS, on separate computers, with live chat using Google's Firebase technology",
             "techStack":  [
                 {
-                    "img": "/icons/nodeJs.png",
-                    "name": "Node"
+                    "img": "/icons/html5.png",
+                    "name": "HTML5"
                 },
                 {
-                    "img": "/icons/postgres.png",
-                    "name": "Postgres"
+                    "img": "/icons/css3.png",
+                    "name": "CSS3"
                 },
                 {
-                    "img": "/icons/react.png",
-                    "name": "React"
+                    "img": "/icons/js.png",
+                    "name": "ES6"
                 },
                 {
-                    "img": "",
-                    "name": "Express"
-                },
-                {
-                    "img": "",
-                    "name": "Sequelize"
+                    "img": "/icons/firebase.jpg",
+                    "name": "Firebase"
                 },
                 {
                     "img": "",
-                    "name": "Materialize"
+                    "name": "Bootstrap"
                 },
                 {
                     "img": "",
-                    "name": "SCSS"
+                    "name": "JQuery"
                 }
             ],
-            "appLink": "https://sched-aroo.herokuapp.com",
-            "repoLink": "https://github.com/jamesmart77/scheduling_app"
+            "appLink": "https://jamesmart77.github.io/RPS/index.html",
+            "repoLink": "https://github.com/jamesmart77/RPS",
+            "imageLink": ""
+        },
+        {
+            "id": 5,
+            "title": "Why James Should Be On Your Team",
+            "description": "Still curious? Check it out and you'll see ;)",
+            "techStack":  [
+                {
+                    "img": "/icons/html5.png",
+                    "name": "HTML5"
+                },
+                {
+                    "img": "/icons/css3.png",
+                    "name": "CSS3"
+                },
+                {
+                    "img": "/icons/js.png",
+                    "name": "ES6"
+                },
+                {
+                    "img": "",
+                    "name": "Bootstrap"
+                }
+            ],
+            "appLink": "https://jamesmart77.github.io/jamesPerks/index.html",
+            "repoLink": "https://github.com/jamesmart77/jamesPerks",
+            "imageLink": ""
         }
     ]
 }
