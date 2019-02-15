@@ -60,8 +60,9 @@
         }
 
         .github-btn {
+            background-color: transparent;
+            border: 1px solid $subTextGrey;
             border-radius: 25px;
-            background-color: $primaryTeal;
             height: auto;
             padding: .2rem;
             transition-duration: 0.5s;

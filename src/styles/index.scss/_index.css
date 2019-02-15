@@ -240,8 +240,9 @@ h3, h4 {
         font-size: 1rem;
         font-weight: 700; }
   .experience-container .github-btn {
+    background-color: transparent;
+    border: 1px solid #faf7f7;
     border-radius: 25px;
-    background-color: #64908A;
     height: auto;
     padding: .2rem;
     transition-duration: 0.5s;
