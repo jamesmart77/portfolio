@@ -3,6 +3,8 @@ import Loader from 'react-loader-spinner';
 import { Row, Col } from 'react-materialize';
 import Profile from '../images/profile.jpg';
 import Family from '../images/family_photo.jpg';
+import WoodWorking from '../images/wood_working.jpg';
+import Code from '../images/code.jpg';
 
 export class LoadingSpinner extends Component {
 
@@ -45,6 +47,8 @@ export class LoadingSpinner extends Component {
                             <h4>Lift off in {this.state.countDown}</h4>
                         </div>
                         <div className='image' style={ {backgroundImage: `url(${Profile})`} } />
+                        <div className='image' style={ {backgroundImage: `url(${WoodWorking})`} } />
+                        <div className='image' style={ {backgroundImage: `url(${Code})`} } />
                         <div className='image' style={ {backgroundImage: `url(${Family})`} } />
                     </Col>
                 </Row>

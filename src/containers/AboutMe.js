@@ -81,10 +81,12 @@ class Portfolio extends Component {
         </Row>
         <Parallax className='code-parallax' imageSrc={Code}/>
         <Footer copyrights="&copy; 2019 Copyright James Martineau"
-          moreLinks={[
-            <a className="grey-text text-lighten-4 right" href="https://github.com/jamesmart77">GitHub</a>,
-            <a className="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/jamesrmartineau">LinkedIn</a>
-          ]}
+          moreLinks={
+            <div className='valign-wrapper'>
+              <a className="grey-text text-lighten-4 right" href="https://github.com/jamesmart77">GitHub</a>
+              <a className="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/jamesrmartineau">LinkedIn</a>
+            </div>
+          }
           links={
             <ul>
               <li>

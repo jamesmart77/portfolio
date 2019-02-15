@@ -61,16 +61,19 @@
     }
 
     footer {
+        background-color: $secondaryGrey;
+
         .unsplash-link {
             background-color:black;
+            border-radius:3px;
             color:white;
-            text-decoration:none;
-            padding:4px 6px;
+            display:inline-block;
             font-size:12px;
             font-weight:bold;
             line-height:1.2;
-            display:inline-block;
-            border-radius:3px;
+            margin-bottom: .25rem;
+            padding:4px 6px;
+            text-decoration:none;
 
             span {
                 display:inline-block;
@@ -78,11 +81,11 @@
 
                 svg {
                     height:12px;
-                    width:auto;
                     position:relative;
-                    vertical-align:middle;
+                    fill:white;
                     top:-2px;
-                    fill:white
+                    vertical-align:middle;
+                    width:auto;
                 }
             }
         }
@@ -90,6 +93,21 @@
         .container {
             a {
                 margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+        footer {
+            text-align: center;
+
+            .container {
+                
+                a {
+                    margin: .25rem auto !important;
+                }
             }
         }
     }
