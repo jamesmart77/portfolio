@@ -24,7 +24,8 @@ class Portfolio extends Component {
 
     return (
       <div className="about-me-container obj-fade-in">
-        <Parallax className='wood-parallax' imageSrc={WoodWorking}/>
+        <Parallax className='wood-parallax hide-on-small-only' imageSrc={WoodWorking}/>
+        <div className='filler-block' />
         <Row className='about-me-container-row'>
           <Col s={12} className='center'>
             <div className='img-container' style={ {backgroundImage: `url(${Photo})`} } />
@@ -79,7 +80,7 @@ class Portfolio extends Component {
             </div>
           </Col>
         </Row>
-        <Parallax className='code-parallax' imageSrc={Code}/>
+        <Parallax className='code-parallax hide-on-small-only' imageSrc={Code}/>
         <Footer copyrights="&copy; 2019 Copyright James Martineau"
           moreLinks={
             <div className='valign-wrapper'>
