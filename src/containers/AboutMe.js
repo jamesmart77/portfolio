@@ -3,7 +3,7 @@ import { Col, Row, Button, Parallax } from 'react-materialize';
 import Photo from '../images/family_photo.jpg';
 import WoodWorking from '../images/wood_working.jpg';
 import Code from '../images/code.jpg';
-import { Fade } from 'react-reveal';
+import { Fade, Slide } from 'react-reveal';
 import AppFooter from '../components/AppFooter';
 
 class Portfolio extends Component {
@@ -24,15 +24,19 @@ class Portfolio extends Component {
     const { isExpanded } = this.state;
 
     return (
-      <div className="about-me-container obj-fade-in">
+      <div className="about-me-container">
         <Parallax className='wood-parallax hide-on-small-only' imageSrc={WoodWorking}/>
         <div className='filler-block' />
         <Row className='about-me-container-row'>
           <Col s={12} className='center'>
-            <div className='img-container' style={ {backgroundImage: `url(${Photo})`} } />
+            <div className='img-container obj-fade-in' style={ {backgroundImage: `url(${Photo})`} } />
             
             <div className='text-container'>
-              <h4 className='header-text'>About Me</h4>
+              <h4 className='header-text'>
+                <Slide duraction={5500} top>
+                  About Me
+                </Slide>
+              </h4>
               <div className='body-text'>
                 <p>
                   My name is James Martineau and I have been a Full Stack Web Developer since February 2018. After
