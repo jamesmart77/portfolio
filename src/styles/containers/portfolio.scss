@@ -5,44 +5,10 @@
         color: $subTextGrey;
         font-weight: 200;
     }
-    footer {
-        background-color: $secondaryGrey;
-
-        .footer-email-btn {
-            background-color: transparent;
-            border: 1px solid $subTextGrey;
-            margin: 1rem 0 -1rem .5rem;
-            
-            i {
-                color: $secondarySalmon;
-            }
-        }
-
-        .container {
-            a {
-                margin-right: .5rem;
-            }
-        }
-    }
 }
 
 @media only screen and (min-width: 993px) {
     .row .col.offset-l1 {
         margin-left: 6.5%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .portfolio-container {
-        footer {
-            text-align: center;
-
-            .container {
-                
-                a {
-                    margin: 0 auto !important;
-                }
-            }
-        }
     }
 }

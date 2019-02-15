@@ -48,43 +48,15 @@
         transition-duration: .5s;
         font-size: 1.2rem; }
 
-.about-me-container footer {
-  background-color: #5f5f5f; }
-  .about-me-container footer .unsplash-link {
-    background-color: black;
-    border-radius: 3px;
-    color: white;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: .25rem;
-    padding: 4px 6px;
-    text-decoration: none; }
-    .about-me-container footer .unsplash-link span {
-      display: inline-block;
-      padding: 2px 3px; }
-      .about-me-container footer .unsplash-link span svg {
-        height: 12px;
-        position: relative;
-        fill: white;
-        top: -2px;
-        vertical-align: middle;
-        width: auto; }
-  .about-me-container footer .container a {
-    margin-right: 0.5rem; }
-
 @media only screen and (max-width: 600px) {
+  .about-me-container .img-container {
+    border: 2px solid #383838; }
   .about-me-container .filler-block {
     background-color: #64908A;
-    border-top: 3px solid #faf7f7;
+    border-top: 3px solid #5f5f5f;
     display: block;
     height: 17rem;
-    margin: -1.4rem -0.75rem 0 -1.4rem; }
-  .about-me-container footer {
-    text-align: center; }
-    .about-me-container footer .container a {
-      margin: .25rem auto !important; } }
+    margin: -1.4rem -0.75rem 0 -1.4rem; } }
 
 body {
   background-color: #383838;
@@ -137,26 +109,61 @@ h3, h4 {
   color: #faf7f7;
   font-weight: 200; }
 
-.portfolio-container footer {
-  background-color: #5f5f5f; }
-  .portfolio-container footer .footer-email-btn {
-    background-color: transparent;
-    border: 1px solid #faf7f7;
-    margin: 1rem 0 -1rem .5rem; }
-    .portfolio-container footer .footer-email-btn i {
-      color: #db697a; }
-  .portfolio-container footer .container a {
-    margin-right: .5rem; }
-
 @media only screen and (min-width: 993px) {
   .row .col.offset-l1 {
     margin-left: 6.5%; } }
 
-@media only screen and (max-width: 600px) {
-  .portfolio-container footer {
+.app-container footer {
+  background-color: #5f5f5f; }
+  .app-container footer .unsplash-link {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: .25rem;
+    padding: 4px 6px;
+    text-decoration: none; }
+    .app-container footer .unsplash-link span {
+      display: inline-block;
+      padding: 2px 3px; }
+      .app-container footer .unsplash-link span svg {
+        height: 12px;
+        position: relative;
+        fill: white;
+        top: -2px;
+        vertical-align: middle;
+        width: auto; }
+  .app-container footer .footer-copyright {
     text-align: center; }
-    .portfolio-container footer .container a {
-      margin: 0 auto !important; } }
+  .app-container footer .footer-links {
+    text-align: center; }
+  .app-container footer .more-links {
+    display: flex;
+    justify-content: center; }
+  .app-container footer .footer-email-btn {
+    background-color: transparent;
+    border: 1px solid #faf7f7;
+    margin: 1rem 0 -1rem .5rem; }
+    .app-container footer .footer-email-btn:hover {
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
+    .app-container footer .footer-email-btn i {
+      color: #db697a; }
+      .app-container footer .footer-email-btn i:hover {
+        color: #ffff80; }
+  .app-container footer .container a {
+    margin-right: 0.5rem; }
+
+@media only screen and (max-width: 993px) {
+  .app-container footer {
+    text-align: center; } }
+
+@media only screen and (max-width: 600px) {
+  .app-container footer .container a {
+    margin: .25rem auto !important; } }
 
 .banner-container {
   background-color: #676776; }

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Col, Row, Button, Parallax, Footer } from 'react-materialize';
+import { Col, Row, Button, Parallax } from 'react-materialize';
 import Photo from '../images/family_photo.jpg';
 import WoodWorking from '../images/wood_working.jpg';
 import Code from '../images/code.jpg';
 import { Fade } from 'react-reveal';
+import AppFooter from '../components/AppFooter';
 
 class Portfolio extends Component {
 
@@ -81,55 +82,7 @@ class Portfolio extends Component {
           </Col>
         </Row>
         <Parallax className='code-parallax hide-on-small-only' imageSrc={Code}/>
-        <Footer copyrights="&copy; 2019 Copyright James Martineau"
-          moreLinks={
-            <div className='valign-wrapper'>
-              <a className="grey-text text-lighten-4 right" href="https://github.com/jamesmart77">GitHub</a>
-              <a className="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/jamesrmartineau">LinkedIn</a>
-            </div>
-          }
-          links={
-            <ul>
-              <li>
-              <a className='unsplash-link' 
-                 href="https://unsplash.com/@mr_vero?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 title="Download free do whatever you want high-resolution photos from Irvan Smith">
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg"  
-                        viewBox="0 0 32 32">
-                          <title>unsplash-logo</title>
-                          <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-                    </svg>
-                  </span>
-                  <span>Irvan Smith</span>
-                </a> 
-              </li>
-              <li>
-              <a  className='unsplash-link' 
-                  href="https://unsplash.com/@hnhmarketing?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" 
-                  target="_blank" rel="noopener noreferrer" 
-                  title="Download free do whatever you want high-resolution photos from Hunter Haley">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" 
-                      viewBox="0 0 32 32">
-                      <title>unsplash-logo</title>
-                      <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-                  </svg>
-                </span>
-                <span>Hunter Haley</span>
-              </a>
-              </li>
-            </ul>
-          }
-          className='example'
-        >
-            <h5 className="white-text">Additional Information</h5>
-            <p className="grey-text text-lighten-4">
-              The following links are in appreciation for the various artists free content.
-            </p>
-        </Footer>
+        <AppFooter />
       </div>
     );
   }

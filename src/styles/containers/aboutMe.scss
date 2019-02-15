@@ -63,65 +63,21 @@
             }
         }
     }
-
-    footer {
-        background-color: $secondaryGrey;
-
-        .unsplash-link {
-            background-color:black;
-            border-radius:3px;
-            color:white;
-            display:inline-block;
-            font-size:12px;
-            font-weight:bold;
-            line-height:1.2;
-            margin-bottom: .25rem;
-            padding:4px 6px;
-            text-decoration:none;
-
-            span {
-                display:inline-block;
-                padding:2px 3px;
-
-                svg {
-                    height:12px;
-                    position:relative;
-                    fill:white;
-                    top:-2px;
-                    vertical-align:middle;
-                    width:auto;
-                }
-            }
-        }
-
-        .container {
-            a {
-                margin-right: 0.5rem;
-            }
-        }
-    }
 }
 
 @media only screen and (max-width: 600px) {
     .about-me-container {
 
+        .img-container {
+            border: 2px solid $primaryGrey;
+        }
+
         .filler-block {
             background-color: $primaryTeal;
-            border-top: 3px solid $subTextGrey;
+            border-top: 3px solid $secondaryGrey;
             display: block;
             height: 17rem;
             margin: -1.4rem -0.75rem 0 -1.4rem;
-        }
-
-        footer {
-            text-align: center;
-
-            .container {
-                
-                a {
-                    margin: .25rem auto !important;
-                }
-            }
         }
     }
 }
