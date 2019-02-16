@@ -6,19 +6,19 @@
             "description": "Scheduling application for recurring events and volunteer coordination with a MVC design. Currently being developed.",
             "techStack": [
                 {
-                    "img": "/icons/nodeJs.png",
+                    "img": "/images/nodeJs.png",
                     "name": "Node"
                 },
                 {
-                    "img": "/icons/postgres.png",
+                    "img": "/images/postgres.png",
                     "name": "Postgres"
                 },
                 {
-                    "img": "/icons/react.png",
+                    "img": "/images/react.png",
                     "name": "React"
                 },
                 {
-                    "img": "/icons/redux.png",
+                    "img": "/images/redux.png",
                     "name": "Redux"
                 },
                 {
@@ -40,7 +40,7 @@
             ],
             "appLink": "https://sched-aroo.herokuapp.com",
             "repoLink": "https://github.com/jamesmart77/scheduling_app",
-            "imageLink": "/icons/schedAroo.png"
+            "imageLink": "/images/schedAroo.png"
         },
         {
             "id": 2,
@@ -48,23 +48,23 @@
             "description": "Simple friend matching application based on the closeness of user's completion of assessment.",
             "techStack":  [
                 {
-                    "img": "/icons/nodeJs.png",
+                    "img": "/images/nodeJs.png",
                     "name": "Node"
                 },
                 {
-                    "img": "/icons/html5.png",
+                    "img": "/images/html5.png",
                     "name": "HTML5"
                 },
                 {
-                    "img": "/icons/css3.png",
+                    "img": "/images/css3.png",
                     "name": "CSS3"
                 },
                 {
-                    "img": "/icons/facebook.png",
+                    "img": "/images/facebook.png",
                     "name": "Auth"
                 },
                 {
-                    "img": "/icons/google.png",
+                    "img": "/images/google.png",
                     "name": "Auth"
                 },
                 {
@@ -86,7 +86,7 @@
             ],
             "appLink": "https://friendconnection.herokuapp.com/",
             "repoLink": "https://github.com/jamesmart77/friendFinder",
-            "imageLink": "/icons/social.jpg"
+            "imageLink": "/images/social.jpg"
         },
         {
             "id": 3,
@@ -94,19 +94,19 @@
             "description": "Sermon uploads made easy for admins and quickly searchable and downloadable for users",
             "techStack":  [
                 {
-                    "img": "/icons/nodeJs.png",
+                    "img": "/images/nodeJs.png",
                     "name": "Node"
                 },
                 {
-                    "img": "/icons/react.png",
+                    "img": "/images/react.png",
                     "name": "React"
                 },
                 {
-                    "img": "/icons/js.png",
+                    "img": "/images/js.png",
                     "name": "ES6"
                 },
                 {
-                    "img": "/icons/css3.png",
+                    "img": "/images/css3.png",
                     "name": "CSS3"
                 },
                 {
@@ -128,7 +128,7 @@
             ],
             "appLink": "https://befreetech.herokuapp.com",
             "repoLink": "https://github.com/jamesmart77/befree-sermons",
-            "imageLink": "/icons/befree.png"
+            "imageLink": "/images/befree.png"
         },
         {
             "id": 4,
@@ -136,19 +136,19 @@
             "description": "Classic two player RPS, on separate computers, with live chat using Google's Firebase technology",
             "techStack":  [
                 {
-                    "img": "/icons/html5.png",
+                    "img": "/images/html5.png",
                     "name": "HTML5"
                 },
                 {
-                    "img": "/icons/css3.png",
+                    "img": "/images/css3.png",
                     "name": "CSS3"
                 },
                 {
-                    "img": "/icons/js.png",
+                    "img": "/images/js.png",
                     "name": "ES6"
                 },
                 {
-                    "img": "/icons/firebase.jpg",
+                    "img": "/images/firebase.jpg",
                     "name": "Firebase"
                 },
                 {
@@ -162,7 +162,7 @@
             ],
             "appLink": "https://jamesmart77.github.io/RPS/index.html",
             "repoLink": "https://github.com/jamesmart77/RPS",
-            "imageLink": "/icons/rps.jpg"
+            "imageLink": "/images/rps.jpg"
         },
         {
             "id": 5,
@@ -170,15 +170,15 @@
             "description": "Still curious? Check it out and you'll see ;)",
             "techStack":  [
                 {
-                    "img": "/icons/html5.png",
+                    "img": "/images/html5.png",
                     "name": "HTML5"
                 },
                 {
-                    "img": "/icons/css3.png",
+                    "img": "/images/css3.png",
                     "name": "CSS3"
                 },
                 {
-                    "img": "/icons/js.png",
+                    "img": "/images/js.png",
                     "name": "ES6"
                 },
                 {

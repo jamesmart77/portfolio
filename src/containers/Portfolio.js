@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Button } from 'react-materialize';
+import { Col, Row } from 'react-materialize';
 import ProjectCard from '../components/ProjectCard';
 import Banner from '../components/Banner';
 import Experience from '../components/Experience';
