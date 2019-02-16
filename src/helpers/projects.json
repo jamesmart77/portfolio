@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Sched-Aroo",
-            "description": "Scheduling application for recurring events and volunteer coordination with a MVC design.",
+            "description": "Scheduling application for recurring events and volunteer coordination with a MVC design. Currently being developed.",
             "techStack": [
                 {
                     "img": "/icons/nodeJs.png",
