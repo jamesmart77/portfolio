@@ -15,7 +15,7 @@ class Portfolio extends Component {
           <Experience />
           <Row>
             <Col s={10} offset='s1' className='center'>
-              <h2 className='projects-header'>Projects</h2>
+              <h2 className='projects-header'>Personal Projects</h2>
               <div className='divider' />
             </Col>
           </Row>

@@ -1,60 +1,51 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import Loader from 'react-loader-spinner';
 import { Row, Col } from 'react-materialize';
 import Profile from '../images/profile.jpg';
 import Family from '../images/family_photo.jpg';
 import WoodWorking from '../images/wood_working.jpg';
 import Code from '../images/code.jpg';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-export class LoadingSpinner extends Component {
+export default function LoadingSpinner(props) {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            countDown: 3
-        }
-    }
+    const [countDown, setCountDown] = useState(3);
 
-    componentDidMount(){
-        let counter = 3;
-        let x = setInterval(() => {
-            counter--;
-            if(counter >0 ){
-                this.setState({countDown: counter});
-            } else {
+    useEffect(() => {
+        const x = setInterval(() => {
+            setCountDown(countDown - 1);
+            if(countDown === 1 ){
                 clearInterval(x);
-                this.props.handleStopLoader();
+                props.handleStopLoader();
             }
         }, 1000);
-    }
 
-    render(){
-        return(
-            <div className='loading-container center'>
-                <Row>
-                    <Col s={12}>
-                        <Loader
-                            type="Plane"
-                            color="#db697a"
-                            height="100"	
-                            width="100"
-                        />
-                    </Col>
+        return () => clearInterval(x); // clear on unmount
+    })
+    
+    return(
+        <div className='loading-container center'>
+            <Row>
+                <Col s={12}>
+                    <Loader
+                        type="BallTriangle"
+                        color="#db697a"
+                        height="100"	
+                        width="100"
+                    />
+                </Col>
 
-                    <Col s={12}>
-                        <div className='loading-text'>
-                            <h5>Beep...Boop...Beep</h5>
-                            <h4>Lift off in {this.state.countDown}</h4>
-                        </div>
-                        <div className='image' style={ {backgroundImage: `url(${Profile})`} } />
-                        <div className='image' style={ {backgroundImage: `url(${WoodWorking})`} } />
-                        <div className='image' style={ {backgroundImage: `url(${Code})`} } />
-                        <div className='image' style={ {backgroundImage: `url(${Family})`} } />
-                    </Col>
-                </Row>
-            </div>
-        )
-    }
+                <Col s={12}>
+                    <div className='loading-text'>
+                        <h5>Beep...Boop...Beep</h5>
+                        <h4>Loading in {countDown}</h4>
+                    </div>
+                    <div className='image' style={ {backgroundImage: `url(${Profile})`} } />
+                    <div className='image' style={ {backgroundImage: `url(${WoodWorking})`} } />
+                    <div className='image' style={ {backgroundImage: `url(${Code})`} } />
+                    <div className='image' style={ {backgroundImage: `url(${Family})`} } />
+                </Col>
+            </Row>
+        </div>
+    )
 }
-
-export default LoadingSpinner;
