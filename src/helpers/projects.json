@@ -110,51 +110,9 @@
                     "name": "Bootstrap"
                 }
             ],
-            "appLink": "https://friendconnection.herokuapp.com/",
-            "repoLink": "https://github.com/jamesmart77/friendFinder",
+            "appLink": "http://justscripture.life",
+            "repoLink": "https://github.com/jamesmart77/justScripture",
             "imageLink": "/images/social.jpg"
-        },
-        {
-            "id": 4,
-            "title": "BeFree Sermons App",
-            "description": "Sermon uploads made easy for admins and quickly searchable and downloadable for users",
-            "techStack":  [
-                {
-                    "img": "/images/nodeJs.png",
-                    "name": "Node"
-                },
-                {
-                    "img": "/images/react.png",
-                    "name": "React"
-                },
-                {
-                    "img": "/images/js.png",
-                    "name": "ES6"
-                },
-                {
-                    "img": "/images/css3.png",
-                    "name": "CSS3"
-                },
-                {
-                    "img": "",
-                    "name": "MongoDB"
-                },
-                {
-                    "img": "",
-                    "name": "Express"
-                },
-                {
-                    "img": "",
-                    "name": "JWTs"
-                },
-                {
-                    "img": "",
-                    "name": "Materialize"
-                }
-            ],
-            "appLink": "https://befreetech.herokuapp.com",
-            "repoLink": "https://github.com/jamesmart77/befree-sermons",
-            "imageLink": "/images/befree.png"
         },
         {
             "id": 5,
@@ -186,7 +144,7 @@
                     "name": "JQuery"
                 }
             ],
-            "appLink": "https://jamesmart77.github.io/RPS/index.html",
+            "appLink": "https://jamesmart77.github.io/hangman/index.html",
             "repoLink": "https://github.com/jamesmart77/RPS",
             "imageLink": "/images/rps.jpg"
         }

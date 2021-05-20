@@ -1,7 +1,7 @@
-{
-    "frontEnd": [
+exports.experience = {
+    frontEnd: [
         {
-            "img":"/images/bitbucket.png",
+            "img": "/images/bitbucket.png",
             "name": "BitBucket"
         },
         {
@@ -69,7 +69,7 @@
             "name": "SCSS"
         }
     ],
-    "backEnd": [
+    backEnd: [
         {
             "img":"/images/java.png",
             "name":"Java"

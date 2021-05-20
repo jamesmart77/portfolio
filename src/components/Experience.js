@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Row, Button, Col, Chip } from 'react-materialize';
 import { Fade } from 'react-reveal';
-import * as experience from '../helpers/experience.json';
+import { experience } from '../helpers/experience';
 
 export class Experience extends Component {
    render(){
