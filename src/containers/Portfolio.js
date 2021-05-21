@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Col, Row, Button } from 'react-materialize';
 import ProjectCard from '../components/ProjectCard';
 import Banner from '../components/Banner';
@@ -36,7 +36,7 @@ export default function Portfolio() {
         <Row className='center'>
             <Button 
               node='a' 
-              href='https://github.com/jamesmart77/resume' 
+              href='https://jamesmart77.github.io/resume' 
               className='external-btn'
             >
               Checkout my Resume
