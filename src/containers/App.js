@@ -18,8 +18,8 @@ export default function App () {
           <LoadingSpinner handleStopLoader={() => setIsLoading(false)}/>
         ) : (
         <Switch>
-          <Route exact path='/' component={Portfolio} />
-          <Route path='/aboutme' component={AboutMe} />
+          <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path='/aboutme' component={AboutMe} />
           <Route component={NoMatch} />
         </Switch>
         )}
