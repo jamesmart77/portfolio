@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Portfolio",
+  "name": "James Martineau Portfolio",
+  "description": "Check out some of my portfolio experience and let's connect!",
   "icons": [
     {
       "src": "favicon.ico",
