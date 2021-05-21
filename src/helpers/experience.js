@@ -1,27 +1,42 @@
-exports.experience = {
+import bitbucket from '../images/bitbucket.png';
+import react from '../images/react.png';
+import redux from '../images/redux.png';
+import html5 from '../images/html5.png';
+import css3 from '../images/css3.png';
+import js from '../images/js.png';
+
+import java from '../images/java.png';
+import nodeJs from '../images/nodeJs.png';
+import springBoot from '../images/springBoot.png';
+import handlebars from '../images/handlebars.png';
+import postgres from '../images/postgres.png';
+import aws from '../images/aws.png';
+import firebase from '../images/firebase.jpeg';
+
+const experience = {
     frontEnd: [
         {
-            "img": "/images/bitbucket.png",
+            "img": bitbucket,
             "name": "BitBucket"
         },
         {
-            "img":"/images/react.png",
+            "img":react,
             "name": "React"
         },
         {
-            "img":"/images/redux.png",
+            "img":redux,
             "name": "Redux"
         },
         {
-            "img":"/images/html5.png",
+            "img":html5,
             "name": "HTML5"
         },
         {
-            "img":"/images/css3.png",
+            "img":css3,
             "name": "CSS3"
         },
         {
-            "img":"/images/js.png",
+            "img":js,
             "name": "ES6"
         },
         {
@@ -71,27 +86,31 @@ exports.experience = {
     ],
     backEnd: [
         {
-            "img":"/images/java.png",
-            "name":"Java"
-        },
-        {
-            "img":"/images/nodeJs.png",
+            "img":nodeJs,
             "name":"Node.JS"
         },
         {
-            "img":"/images/springBoot.png",
+            "img":java,
+            "name":"Java"
+        },
+        {
+            "img":springBoot,
             "name":"Spring Boot"
         },
         {
-            "img":"/images/handlebars.png",
+            "img":aws,
+            "name":"AWS Technologies"
+        },
+        {
+            "img":handlebars,
             "name":"Handlebars"
         },
         {
-            "img":"/images/postgres.png",
+            "img":postgres,
             "name":"Postgres"
         },
         {
-            "img":"/images/firebase.jpg",
+            "img":firebase,
             "name":"Firebase"
         },
         {
@@ -139,6 +158,9 @@ exports.experience = {
             "name":"Debugging"
         },
         {
+            "name":"Well Architected Framework analysis"
+        },
+        {
             "name":"Performance Optimization"
         },
         {
@@ -155,9 +177,8 @@ exports.experience = {
         },
         {
             "name":"Database Design"
-        },
-        {
-            "name":"Codebase Navigation"
         }
     ]
 }
+
+export { experience };

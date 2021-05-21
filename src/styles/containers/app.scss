@@ -2,13 +2,14 @@
 
 body {
     background-color: $primaryGrey;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200 !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100 !important;
     min-width: 360px;
+    transition: all 0.3s;
 }
 
 h3, h4 {
-    font-weight: 200 !important;
+    font-weight: 300 !important;
 }
 
 .obj-fade-in {
@@ -18,6 +19,22 @@ h3, h4 {
     -ms-animation: fadein 2s; /* Internet Explorer */
     -o-animation: fadein 2s; /* Opera < 12.1 */
     animation: fadein 2s;
+}
+
+.external-btn {
+    background-color: transparent;
+    border: 1px solid $subTextGrey;
+    border-radius: 25px;
+    height: auto;
+    margin-bottom: 2rem;
+    padding: .2rem;
+    width: 40%;
+    
+    &:hover {
+        background-color: $secondarySalmon;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
 }
 
 

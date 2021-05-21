@@ -23,7 +23,7 @@
         .exp-section {
             background: linear-gradient($subTextGrey, $white);
             border: 1px solid $primaryTeal;
-            border-radius: 40px;
+            border-radius: 0.5rem;
             color: $primarySlate;
             display: block;
             flex-basis: 0;
@@ -56,22 +56,6 @@
                     font-size: 1rem;
                     font-weight: 700;
                 }
-            }
-        }
-
-        .github-btn {
-            background-color: transparent;
-            border: 1px solid $subTextGrey;
-            border-radius: 25px;
-            height: auto;
-            padding: .2rem;
-            transition-duration: 0.5s;
-            width: 40%;
-            
-            &:hover {
-                background-color: $secondarySalmon;
-                font-size: 1.1rem;
-                transition-duration: 0.5s;
             }
         }
     }

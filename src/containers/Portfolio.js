@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Col, Row } from 'react-materialize';
+import { Col, Row, Button } from 'react-materialize';
 import ProjectCard from '../components/ProjectCard';
 import Banner from '../components/Banner';
 import Experience from '../components/Experience';
-import * as projectData from '../helpers/projects.json';
+import { projects } from '../helpers/projects.js';
 import AppFooter from '../components/AppFooter';
 
 class Portfolio extends Component {
@@ -19,8 +19,8 @@ class Portfolio extends Component {
               <div className='divider' />
             </Col>
           </Row>
-          <Row>
-            { projectData.projects.map(project => {
+          <div className="projects-row">
+            { projects.map(project => {
               return (
                 <ProjectCard 
                   key={project.id}
@@ -34,6 +34,15 @@ class Portfolio extends Component {
                 />
               )
             })}
+          </div>
+          <Row className='center'>
+              <Button 
+                node='a' 
+                href='https://github.com/jamesmart77/resume' 
+                className='external-btn'
+              >
+                Checkout my Resume
+              </Button>
           </Row>
           <AppFooter />
       </div>

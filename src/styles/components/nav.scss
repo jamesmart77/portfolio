@@ -5,12 +5,14 @@ nav {
 
     .brand-logo {
         font-size: 2.75rem;
+        font-weight: 300;
     }
 
     ul {
 
         a {
             font-size: 1.5rem;
+            font-weight: 300;
 
             &:hover {
                 color: $primaryYellow;

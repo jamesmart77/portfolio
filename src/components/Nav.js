@@ -11,6 +11,7 @@ export class Nav extends Component {
                         <li>
                             <Link to='/aboutme'>About Me</Link>
                         </li>
+                        <NavItem href='https://github.com/jamesmart77/resume'>Resume</NavItem>
                         <NavItem href='https://github.com/jamesmart77'>GitHub</NavItem>
                         <NavItem href='https://www.linkedin.com/in/jamesrmartineau'>LinkedIn</NavItem>
                     </div>
